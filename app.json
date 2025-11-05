@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "GreenSaver",
+    "slug": "greensaver",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/greensaver_logo.png",
+    "splash": {
+      "image": "./assets/images/greensaver_logo.png",
+      "backgroundColor": "#0b572c",
+      "resizeMode": "contain"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#145A32",
+      "barStyle": "light-content",
+      "translucent": false
+    },
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id-if-any"
+      }
+    }
+  }
+}

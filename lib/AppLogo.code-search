@@ -1,0 +1,21 @@
+# Query: AppLog
+# ContextLines: 1
+
+5 results - 2 files
+
+app\_layout.tsx:
+   6  import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
+   7: import AppLogo from '../components/AppLogo';
+   8  
+
+  12      <View style={[styles.logoWrap, { top: insets.top + 8 }]}>
+  13:       <AppLogo size={64} />
+  14      </View>
+
+components\AppLogo.tsx:
+  1: // components/AppLogo.tsx
+  2  import React from 'react';
+
+  6  
+  7: export default function AppLogo({ size = 44, style }: Props) {
+  8    return (
