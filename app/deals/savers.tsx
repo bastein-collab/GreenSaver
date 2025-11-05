@@ -15,6 +15,8 @@ import TopBrandsCard from "../../components/cards/TopBrandsCard";
 import TopDispensariesCard from "../../components/cards/TopDispensariesCard";
 import COLORS from "../../constants/colors";
 import AppHeader from "../../components/ui/AppHeader";
+import { useStoreSummaries } from "../../hooks/useStoreSummaries";
+import { getTopBrandsToday } from "../../services/brands";
 
 // Toggle the title layout:
 //  - "underLogo": Title sits under the logo and is pushed right (your spec)
@@ -24,22 +26,17 @@ const TITLE_LAYOUT: "underLogo" | "fullWidth" = "underLogo";
 export default function SaversScreen() {
   const router = useRouter();
   const [zip, setZip] = useState("");
-
-  // --- Fake data (replace with live later) ---
-  const topDispensary = {
-    name: "The Social Leaf",
-    deals: 525,
-    maxOff: 0,
-    avgPrice: 54.99,
-  };
-
-  const topBrands = [
-    { id: "1", name: "Select", percentOff: 40, deals: 29 },
-    { id: "2", name: "Cheetah", percentOff: 25, deals: 20 },
-    { id: "3", name: "Kind Tree", percentOff: 18, deals: 18 },
-    { id: "4", name: "Legend", percentOff: 15, deals: 18 },
-  ];
-  // -------------------------------------------
+  // Live data hooks/services (with safe fallbacks inside)
+  const { data: storeSummaries } = useStoreSummaries();
+  const [topBrands, setTopBrands] = useState(
+    [] as { id: string; name: string; percentOff: number; deals: number }[]
+  );
+  React.useEffect(() => {
+    (async () => {
+      const res = await getTopBrandsToday(4);
+      setTopBrands((res as any).data ?? []);
+    })();
+  }, []);
 
   const Header = (
     <View style={styles.headerWrap}>
@@ -87,10 +84,10 @@ export default function SaversScreen() {
       renderItem={() => (
         <View style={styles.content}>
           <TopDispensariesCard
-            name={topDispensary.name}
-            deals={topDispensary.deals}
-            maxOff={topDispensary.maxOff}
-            avgPrice={topDispensary.avgPrice}
+            name={(storeSummaries?.[0]?.dispensary_name as any) || "The Social Leaf"}
+            deals={(storeSummaries?.[0]?.deals_count as any) || 0}
+            maxOff={(storeSummaries?.[0]?.max_off as any) || 0}
+            avgPrice={(storeSummaries?.[0]?.avg_price as any) || 0}
           />
 
           <View style={{ height: 14 }} />
