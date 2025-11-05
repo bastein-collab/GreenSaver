@@ -78,3 +78,19 @@ The UI is locked. To power it with live data:
   - 	op_brands_today via services/brands.ts.
 
 Once the SQL and ingestion are in place, the app shows live data with safe fallbacks when envs are missing.
+
+### SQL to run in Supabase (order)
+
+1. `db/schema_example.sql` – base tables + core views
+2. `db/deals_view.sql` – PostgREST view for deals list
+3. `db/geo.sql` – ZIP centroids, haversine, geo RPCs
+4. `db/reviews_subscriptions.sql` – subscriptions + reviews with RLS
+5. `db/security_init.sql` – grants/policies (idempotent)
+
+Tip: Use the Supabase SQL Editor. All scripts are idempotent and safe to re-run.
+
+### VS Code + Supabase workflow
+
+- Edit TypeScript/UI in VS Code as usual. The UI is frozen; only data wiring should change.
+- Apply SQL by pasting the files above into the Supabase SQL Editor (or check them into a migration system if you prefer). No additional tooling required.
+- Env: keep `.env` with client keys for Expo (`EXPO_PUBLIC_*`) and server keys for scrapers; VS Code uses them via `start-dev.ps1` and scripts.

@@ -115,7 +115,9 @@ begin
     'top_dispensaries_today',
     'top_brands_today',
     'deals_by_dispensary_today',
-    'deals_norm'
+    'deals_norm',
+    'v_deals_by_store',
+    'deals_view'
   ]
   loop
     if exists (
