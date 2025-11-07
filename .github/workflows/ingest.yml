@@ -1,4 +1,5 @@
 name: Ingest NJ Stores
+
 on:
   workflow_dispatch:
   schedule:
