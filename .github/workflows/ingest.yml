@@ -2,69 +2,22 @@ name: Ingest NJ Stores
 on:
 schedule:
 - cron: '*/15 * * * *' # every 15 minutes (chunked)
-workflow_dispatch: {}
+workflow_dispatch:
+
 jobs:
 ingest:
 runs-on: ubuntu-latest
-steps:
-- name: Checkout
-uses: actions/checkout@v4
+permissions:
+contents: read
+
 name: Ingest NJ Stores
 on:
 schedule:
 - cron: '*/15 * * * *' # every 15 minutes (chunked)
-workflow_dispatch: {}
+workflow_dispatch:
+
 jobs:
 ingest:
 runs-on: ubuntu-latest
-steps:
-- name: Checkout
-uses: actions/checkout@v4
-
-  - name: Setup Node
-    uses: actions/setup-node@v4
-    with:
-      node-version: '20'
-
-  - name: Install deps
-    run: npm ci
-
-  - name: Install Playwright (Chromium)
-    run: |
-      npx playwright install --with-deps chromium
-
-  - name: Build stores from CSV (if present)
-    run: |
-      if [ -f scripts/ingest/stores.nj.csv ]; then
-        node -r dotenv/config scripts/ingest/build_stores_from_csv.mjs scripts/ingest/stores.nj.csv > scripts/ingest/stores.nj.json
-      fi
-
-  - name: Resolve store IDs
-    run: |
-      node -r dotenv/config scripts/ingest/resolve_store_ids_batch.mjs scripts/ingest/stores.nj.json > scripts/ingest/stores.nj.resolved.json
-    env:
-      DEALS_STORES_ENDPOINT: ${{ vars.DEALS_STORES_ENDPOINT }}
-
-  - name: Ingest chunk (rolling)
-    shell: bash
-    run: |
-      CHUNK_SIZE=${CHUNK_SIZE:-25}
-      TOTAL=${TOTAL_STORES:-275}
-      IDX=$(( ( ( $(date +%s) / 60 ) / 15 ) % ( (TOTAL + CHUNK_SIZE - 1) / CHUNK_SIZE ) ))
-      OFFSET=$(( IDX * CHUNK_SIZE ))
-      echo "Processing chunk index=$IDX offset=$OFFSET size=$CHUNK_SIZE of total=$TOTAL"
-      node -r dotenv/config scripts/ingest/multi_store.mjs scripts/ingest/stores.nj.resolved.json --limit $CHUNK_SIZE --offset $OFFSET --concurrency 1
-    env:
-      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-      SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
-      DEALS_HEADERS_JSON: ${{ secrets.DEALS_HEADERS_JSON }}
-      CHUNK_SIZE: ${{ vars.CHUNK_SIZE }}
-      TOTAL_STORES: ${{ vars.TOTAL_STORES }}
-      INGEST_REPORT: ingest_report.json
-
-  - name: Upload ingest report
-    uses: actions/upload-artifact@v4
-    with:
-      name: ingest-report-${{ github.run_id }}
-      path: ingest_report.json
- 
+permissions:
+contents: read
