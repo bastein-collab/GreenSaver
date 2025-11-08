@@ -1,0 +1,5779 @@
+{
+  "stores": [
+    {
+      "name": "1634 Funk",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07304",
+      "website": "https://www.iheartjane.com/dispensaries/1634-funk",
+      "lat": 40.712915,
+      "lon": -74.064123,
+      "source": {
+        "type": "jane",
+        "slug": "1634-funk",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/1634-funk",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "4Twenty Somewhere",
+      "city": "Hewitt",
+      "state": "NJ",
+      "postal_code": "07421",
+      "website": "https://www.iheartjane.com/dispensaries/4twenty-somewhere",
+      "lat": 41.153179,
+      "lon": -74.354334,
+      "source": {
+        "type": "jane",
+        "slug": "4twenty-somewhere",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/4twenty-somewhere",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "A-Z Supply",
+      "city": "Bloomfield",
+      "state": "NJ",
+      "postal_code": "07003",
+      "website": "https://www.iheartjane.com/dispensaries/a-z-supply",
+      "lat": 40.834279,
+      "lon": -74.180603,
+      "source": {
+        "type": "jane",
+        "slug": "a-z-supply",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/a-z-supply",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "A21 Wellness",
+      "city": "Scotch Plains",
+      "state": "NJ",
+      "postal_code": "07076",
+      "website": "https://www.iheartjane.com/dispensaries/a21-wellness",
+      "lat": 40.664622,
+      "lon": -74.388585,
+      "source": {
+        "type": "jane",
+        "slug": "a21-wellness",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/a21-wellness",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "AC Leef",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/ac-leef",
+      "lat": 39.356956,
+      "lon": -74.459919,
+      "source": {
+        "type": "jane",
+        "slug": "ac-leef",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/ac-leef",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Altitude Cannabis",
+      "city": "Toms River",
+      "state": "NJ",
+      "postal_code": "08757",
+      "website": "https://www.iheartjane.com/dispensaries/altitude",
+      "lat": 39.946353,
+      "lon": -74.196132,
+      "source": {
+        "type": "jane",
+        "slug": "altitude",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/altitude",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Altius NJ",
+      "city": "Glassboro",
+      "state": "NJ",
+      "postal_code": "08028",
+      "website": "https://www.iheartjane.com/dispensaries/altius-nj",
+      "lat": 39.705091,
+      "lon": -75.107363,
+      "source": {
+        "type": "jane",
+        "slug": "altius-nj",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/altius-nj",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Andover Cannabis",
+      "city": "Andover",
+      "state": "NJ",
+      "postal_code": "07821",
+      "website": "https://www.iheartjane.com/dispensaries/andover",
+      "lat": 40.987733,
+      "lon": -74.742124,
+      "source": {
+        "type": "jane",
+        "slug": "andover",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/andover",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Anja",
+      "city": "Highland Park",
+      "state": "NJ",
+      "postal_code": "08904",
+      "website": "https://www.iheartjane.com/dispensaries/anja",
+      "lat": 40.501438,
+      "lon": -74.411144,
+      "source": {
+        "type": "jane",
+        "slug": "anja",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/anja",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Aurum Botanics",
+      "city": "Pemberton",
+      "state": "NJ",
+      "postal_code": "08068",
+      "website": "https://www.iheartjane.com/dispensaries/aurum-botanics",
+      "lat": 39.977479,
+      "lon": -74.679783,
+      "source": {
+        "type": "jane",
+        "slug": "aurum-botanics",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/aurum-botanics",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Baked by the River",
+      "city": "Lambertville",
+      "state": "NJ",
+      "postal_code": "08530",
+      "website": "https://www.iheartjane.com/dispensaries/baked-by-river",
+      "lat": 40.366982,
+      "lon": -74.944753,
+      "source": {
+        "type": "jane",
+        "slug": "baked-by-river",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/baked-by-river",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Bakinâ€™ Bad",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/bakin-bad",
+      "lat": 39.354262,
+      "lon": -74.446484,
+      "source": {
+        "type": "jane",
+        "slug": "bakin-bad",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/bakin-bad",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Bay Street Greenery",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07302",
+      "website": "https://www.iheartjane.com/dispensaries/bay-street-greenery",
+      "lat": 40.721022,
+      "lon": -74.039921,
+      "source": {
+        "type": "jane",
+        "slug": "bay-street-greenery",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/bay-street-greenery",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Benedict's Supply",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07307",
+      "website": "https://www.iheartjane.com/dispensaries/benedict-s-supply",
+      "lat": 40.752282,
+      "lon": -74.053287,
+      "source": {
+        "type": "jane",
+        "slug": "benedict-s-supply",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/benedict-s-supply",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "BestBuds",
+      "city": "Woodbury",
+      "state": "NJ",
+      "postal_code": "08096",
+      "website": "https://www.iheartjane.com/dispensaries/bestbuds",
+      "lat": 39.836279,
+      "lon": -75.155221,
+      "source": {
+        "type": "jane",
+        "slug": "bestbuds",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/bestbuds",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Beyond Bleaf, LLC",
+      "city": "West Milford",
+      "state": "NJ",
+      "postal_code": "07480",
+      "website": "https://www.iheartjane.com/dispensaries/beyond-bleaf",
+      "lat": 41.045587,
+      "lon": -74.385893,
+      "source": {
+        "type": "jane",
+        "slug": "beyond-bleaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/beyond-bleaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "BLKBRN Cannabis Dispensary",
+      "city": "Highland Park",
+      "state": "NJ",
+      "postal_code": "08904",
+      "website": "https://www.iheartjane.com/dispensaries/blkbrn",
+      "lat": 40.501096,
+      "lon": -74.414503,
+      "source": {
+        "type": "jane",
+        "slug": "blkbrn",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/blkbrn",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Blue Oak",
+      "city": "Bloomfield",
+      "state": "NJ",
+      "postal_code": "07003",
+      "website": "https://www.iheartjane.com/dispensaries/blue-oak",
+      "lat": 40.826949,
+      "lon": -74.1875,
+      "source": {
+        "type": "jane",
+        "slug": "blue-oak",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/blue-oak",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Blue Violets",
+      "city": "Hoboken",
+      "state": "NJ",
+      "postal_code": "07030",
+      "website": "https://www.iheartjane.com/dispensaries/blue-violets",
+      "lat": 40.744357,
+      "lon": -74.029099,
+      "source": {
+        "type": "jane",
+        "slug": "blue-violets",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/blue-violets",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "BluLight Cannabis",
+      "city": "Woodbury Heights",
+      "state": "NJ",
+      "postal_code": "08097",
+      "website": "https://www.iheartjane.com/dispensaries/blulight",
+      "lat": 39.818391,
+      "lon": -75.162371,
+      "source": {
+        "type": "jane",
+        "slug": "blulight",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/blulight",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Boone Town Provisions",
+      "city": "Boonton",
+      "state": "NJ",
+      "postal_code": "07005",
+      "website": "https://www.iheartjane.com/dispensaries/boone-town-provisions",
+      "lat": 40.910378,
+      "lon": -74.39251,
+      "source": {
+        "type": "jane",
+        "slug": "boone-town-provisions",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/boone-town-provisions",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Botera Harrison",
+      "city": "Harrison",
+      "state": "NJ",
+      "postal_code": "07029",
+      "website": "https://www.iheartjane.com/dispensaries/botera-harrison",
+      "lat": 40.751777,
+      "lon": -74.157106,
+      "source": {
+        "type": "jane",
+        "slug": "botera-harrison",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/botera-harrison",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Botera Union",
+      "city": "Union",
+      "state": "NJ",
+      "postal_code": "07083",
+      "website": "https://www.iheartjane.com/dispensaries/botera-union",
+      "lat": 40.690204,
+      "lon": -74.29044,
+      "source": {
+        "type": "jane",
+        "slug": "botera-union",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/botera-union",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Bridge City Collective Dispensary",
+      "city": "Somerset",
+      "state": "NJ",
+      "postal_code": "08873",
+      "website": "https://www.iheartjane.com/dispensaries/bridge-city-collective",
+      "lat": 40.492148,
+      "lon": -74.471663,
+      "source": {
+        "type": "jane",
+        "slug": "bridge-city-collective",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/bridge-city-collective",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Brotherly Bud Dispensary",
+      "city": "Mt Ephraim",
+      "state": "NJ",
+      "postal_code": "08059",
+      "website": "https://www.iheartjane.com/dispensaries/brotherly-bud",
+      "lat": 39.886124,
+      "lon": -75.08778,
+      "source": {
+        "type": "jane",
+        "slug": "brotherly-bud",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/brotherly-bud",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Bud 2 Bloom",
+      "city": "Netcong",
+      "state": "NJ",
+      "postal_code": "07857",
+      "website": "https://www.iheartjane.com/dispensaries/bud-2-bloom",
+      "lat": 40.896751,
+      "lon": -74.698369,
+      "source": {
+        "type": "jane",
+        "slug": "bud-2-bloom",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/bud-2-bloom",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Bud City NJ",
+      "city": "Newton",
+      "state": "NJ",
+      "postal_code": "07860",
+      "website": "https://www.iheartjane.com/dispensaries/bud-city-nj",
+      "lat": 41.063585,
+      "lon": -74.747789,
+      "source": {
+        "type": "jane",
+        "slug": "bud-city-nj",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/bud-city-nj",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Budzooka Weed Dispensary",
+      "city": "Elizabeth",
+      "state": "NJ",
+      "postal_code": "07201",
+      "website": "https://www.iheartjane.com/dispensaries/budzooka-weed",
+      "lat": 40.665803,
+      "lon": -74.214663,
+      "source": {
+        "type": "jane",
+        "slug": "budzooka-weed",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/budzooka-weed",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Camden Apothecary",
+      "city": "Camden",
+      "state": "NJ",
+      "postal_code": "08103",
+      "website": "https://www.iheartjane.com/dispensaries/camden-apothecary",
+      "lat": 39.93188,
+      "lon": -75.102736,
+      "source": {
+        "type": "jane",
+        "slug": "camden-apothecary",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/camden-apothecary",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Canabhang",
+      "city": "West Milford",
+      "state": "NJ",
+      "postal_code": "07480",
+      "website": "https://www.iheartjane.com/dispensaries/canabhang",
+      "lat": 41.131404,
+      "lon": -74.36541,
+      "source": {
+        "type": "jane",
+        "slug": "canabhang",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/canabhang",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Canna Bar",
+      "city": "Matawan",
+      "state": "NJ",
+      "postal_code": "07747",
+      "website": "https://www.iheartjane.com/dispensaries/canna-bar",
+      "lat": 40.419101,
+      "lon": -74.22747,
+      "source": {
+        "type": "jane",
+        "slug": "canna-bar",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/canna-bar",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Canna Remedies",
+      "city": "Trenton",
+      "state": "NJ",
+      "postal_code": "08638",
+      "website": "https://www.iheartjane.com/dispensaries/canna-remedies",
+      "lat": 40.249569,
+      "lon": -74.75644,
+      "source": {
+        "type": "jane",
+        "slug": "canna-remedies",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/canna-remedies",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Cannabis Clubhouse",
+      "city": "Sussex",
+      "state": "NJ",
+      "postal_code": "07461",
+      "website": "https://www.iheartjane.com/dispensaries/clubhouse",
+      "lat": 41.211438,
+      "lon": -74.602697,
+      "source": {
+        "type": "jane",
+        "slug": "clubhouse",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/clubhouse",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "CannaBoy Treehouse",
+      "city": "South Orange Village",
+      "state": "NJ",
+      "postal_code": "07079",
+      "website": "https://www.iheartjane.com/dispensaries/cannaboy-treehouse",
+      "lat": 40.747035,
+      "lon": -74.261114,
+      "source": {
+        "type": "jane",
+        "slug": "cannaboy-treehouse",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/cannaboy-treehouse",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Cannavibes",
+      "city": "Elmwood Park",
+      "state": "NJ",
+      "postal_code": "07407",
+      "website": "https://www.iheartjane.com/dispensaries/cannavibes",
+      "lat": 40.893808,
+      "lon": -74.124554,
+      "source": {
+        "type": "jane",
+        "slug": "cannavibes",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/cannavibes",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Canopy Crossroad",
+      "city": "Red Bank",
+      "state": "NJ",
+      "postal_code": "07701",
+      "website": "https://www.iheartjane.com/dispensaries/canopy-crossroad",
+      "lat": 40.35008,
+      "lon": -74.073174,
+      "source": {
+        "type": "jane",
+        "slug": "canopy-crossroad",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/canopy-crossroad",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Carry-On Cannabis",
+      "city": "Williamstown",
+      "state": "NJ",
+      "postal_code": "08094",
+      "website": "https://www.iheartjane.com/dispensaries/carry-on",
+      "lat": 39.650741,
+      "lon": -74.951782,
+      "source": {
+        "type": "jane",
+        "slug": "carry-on",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/carry-on",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Casa Verde Wellness",
+      "city": "Dover",
+      "state": "NJ",
+      "postal_code": "07801",
+      "website": "https://www.iheartjane.com/dispensaries/casa-verde-wellness",
+      "lat": 40.887572,
+      "lon": -74.541048,
+      "source": {
+        "type": "jane",
+        "slug": "casa-verde-wellness",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/casa-verde-wellness",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Castaway Cannabis",
+      "city": "Delran",
+      "state": "NJ",
+      "postal_code": "08075",
+      "website": "https://www.iheartjane.com/dispensaries/castaway",
+      "lat": 40.018406,
+      "lon": -74.948223,
+      "source": {
+        "type": "jane",
+        "slug": "castaway",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/castaway",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Central Jersey Dispensary",
+      "city": "Somerset",
+      "state": "NJ",
+      "postal_code": "08873",
+      "website": "https://www.iheartjane.com/dispensaries/central-jersey",
+      "lat": 40.513392,
+      "lon": -74.489669,
+      "source": {
+        "type": "jane",
+        "slug": "central-jersey",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/central-jersey",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Citi Roots",
+      "city": "Kingston",
+      "state": "NJ",
+      "postal_code": "08528",
+      "website": "https://www.iheartjane.com/dispensaries/citi-roots",
+      "lat": 40.375642,
+      "lon": -74.614026,
+      "source": {
+        "type": "jane",
+        "slug": "citi-roots",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/citi-roots",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "City Leaves",
+      "city": "Egg Harbor Township",
+      "state": "NJ",
+      "postal_code": "08234",
+      "website": "https://www.iheartjane.com/dispensaries/city-leaves",
+      "lat": 39.419324,
+      "lon": -74.527483,
+      "source": {
+        "type": "jane",
+        "slug": "city-leaves",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/city-leaves",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "CityLeaf Dispensary",
+      "city": "Newark",
+      "state": "NJ",
+      "postal_code": "07104",
+      "website": "https://www.iheartjane.com/dispensaries/cityleaf",
+      "lat": 40.768281,
+      "lon": -74.163445,
+      "source": {
+        "type": "jane",
+        "slug": "cityleaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/cityleaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Cloud Nine Dispensary",
+      "city": "North Plainfield",
+      "state": "NJ",
+      "postal_code": "07060",
+      "website": "https://www.iheartjane.com/dispensaries/cloud-nine",
+      "lat": 40.607401,
+      "lon": -74.468243,
+      "source": {
+        "type": "jane",
+        "slug": "cloud-nine",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/cloud-nine",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Conservatory Cannabis Company",
+      "city": "Egg Harbor Township",
+      "state": "NJ",
+      "postal_code": "08234",
+      "website": "https://www.iheartjane.com/dispensaries/conservatory",
+      "lat": 39.419324,
+      "lon": -74.527483,
+      "source": {
+        "type": "jane",
+        "slug": "conservatory",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/conservatory",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Cookies Harrison",
+      "city": "Harrison",
+      "state": "NJ",
+      "postal_code": "07029",
+      "website": "https://www.iheartjane.com/dispensaries/cookies-harrison",
+      "lat": 40.741006,
+      "lon": -74.15724,
+      "source": {
+        "type": "jane",
+        "slug": "cookies-harrison",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/cookies-harrison",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Cottonmouth Dispensary",
+      "city": "Runnemede",
+      "state": "NJ",
+      "postal_code": "08078",
+      "website": "https://www.iheartjane.com/dispensaries/cottonmouth",
+      "lat": 39.84907,
+      "lon": -75.071848,
+      "source": {
+        "type": "jane",
+        "slug": "cottonmouth",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/cottonmouth",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "CREAM Cannabis Dispensary",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07302",
+      "website": "https://www.iheartjane.com/dispensaries/cream",
+      "lat": 40.722139,
+      "lon": -74.046487,
+      "source": {
+        "type": "jane",
+        "slug": "cream",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/cream",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Cuzzie's",
+      "city": "Camden",
+      "state": "NJ",
+      "postal_code": "08104",
+      "website": "https://www.iheartjane.com/dispensaries/cuzzie-s",
+      "lat": 39.910066,
+      "lon": -75.097564,
+      "source": {
+        "type": "jane",
+        "slug": "cuzzie-s",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/cuzzie-s",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Dank Poet Dispensary",
+      "city": "Washington",
+      "state": "NJ",
+      "postal_code": "07882",
+      "website": "https://www.iheartjane.com/dispensaries/dank-poet",
+      "lat": 40.759716,
+      "lon": -74.974289,
+      "source": {
+        "type": "jane",
+        "slug": "dank-poet",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/dank-poet",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Daylite Cannabis",
+      "city": "Mt Laurel Township",
+      "state": "NJ",
+      "postal_code": "08054",
+      "website": "https://www.iheartjane.com/dispensaries/daylite",
+      "lat": 39.925317,
+      "lon": -74.952446,
+      "source": {
+        "type": "jane",
+        "slug": "daylite",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/daylite",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Dispensary of Somerset",
+      "city": "Somerset",
+      "state": "NJ",
+      "postal_code": "08873",
+      "website": "https://www.iheartjane.com/dispensaries/of-somerset",
+      "lat": 40.486342,
+      "lon": -74.483256,
+      "source": {
+        "type": "jane",
+        "slug": "of-somerset",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/of-somerset",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Dispensary of Union",
+      "city": "Union",
+      "state": "NJ",
+      "postal_code": "07083",
+      "website": "https://www.iheartjane.com/dispensaries/of-union",
+      "lat": 40.692098,
+      "lon": -74.272305,
+      "source": {
+        "type": "jane",
+        "slug": "of-union",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/of-union",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Dogwood Green",
+      "city": "West Orange",
+      "state": "NJ",
+      "postal_code": "07052",
+      "website": "https://www.iheartjane.com/dispensaries/dogwood-green",
+      "lat": 40.770313,
+      "lon": -74.244082,
+      "source": {
+        "type": "jane",
+        "slug": "dogwood-green",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/dogwood-green",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Doobiez",
+      "city": "West Milford",
+      "state": "NJ",
+      "postal_code": "07480",
+      "website": "https://www.iheartjane.com/dispensaries/doobiez",
+      "lat": 41.138094,
+      "lon": -74.366744,
+      "source": {
+        "type": "jane",
+        "slug": "doobiez",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/doobiez",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Earth & Ivy",
+      "city": "New Brunswick",
+      "state": "NJ",
+      "postal_code": "08901",
+      "website": "https://www.iheartjane.com/dispensaries/earth-ivy",
+      "lat": 40.494785,
+      "lon": -74.443542,
+      "source": {
+        "type": "jane",
+        "slug": "earth-ivy",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/earth-ivy",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Earth & Ivy Lakehurst",
+      "city": "Lakehurst",
+      "state": "NJ",
+      "postal_code": "08733",
+      "website": "https://www.iheartjane.com/dispensaries/earth-ivy-lakehurst",
+      "lat": 40.012477,
+      "lon": -74.311941,
+      "source": {
+        "type": "jane",
+        "slug": "earth-ivy-lakehurst",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/earth-ivy-lakehurst",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Elevated by TheCannaBossLady",
+      "city": "Maplewood",
+      "state": "NJ",
+      "postal_code": "07040",
+      "website": "https://www.iheartjane.com/dispensaries/elevated-by-thecannabosslady",
+      "lat": 40.731244,
+      "lon": -74.278555,
+      "source": {
+        "type": "jane",
+        "slug": "elevated-by-thecannabosslady",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/elevated-by-thecannabosslady",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Elevated Herb",
+      "city": "West Milford",
+      "state": "NJ",
+      "postal_code": "07480",
+      "website": "https://www.iheartjane.com/dispensaries/elevated-herb",
+      "lat": 41.014914,
+      "lon": -74.382349,
+      "source": {
+        "type": "jane",
+        "slug": "elevated-herb",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/elevated-herb",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Emerald Tea Supply",
+      "city": "Bloomfield",
+      "state": "NJ",
+      "postal_code": "07003",
+      "website": "https://www.iheartjane.com/dispensaries/emerald-tea-supply",
+      "lat": 40.806054,
+      "lon": -74.193209,
+      "source": {
+        "type": "jane",
+        "slug": "emerald-tea-supply",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/emerald-tea-supply",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Enlighten Dispensary",
+      "city": "Marlton",
+      "state": "NJ",
+      "postal_code": "08053",
+      "website": "https://www.iheartjane.com/dispensaries/enlighten",
+      "lat": 39.896471,
+      "lon": -74.940643,
+      "source": {
+        "type": "jane",
+        "slug": "enlighten",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/enlighten",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Everest Dispensary",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/everest",
+      "lat": 39.362519,
+      "lon": -74.426165,
+      "source": {
+        "type": "jane",
+        "slug": "everest",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/everest",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Evergreen Nature's Remedy",
+      "city": "Butler",
+      "state": "NJ",
+      "postal_code": "07405",
+      "website": "https://www.iheartjane.com/dispensaries/evergreen-nature-s-remedy",
+      "lat": 40.991036,
+      "lon": -74.341,
+      "source": {
+        "type": "jane",
+        "slug": "evergreen-nature-s-remedy",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/evergreen-nature-s-remedy",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Evolve Cannabis",
+      "city": "Bordentown",
+      "state": "NJ",
+      "postal_code": "08505",
+      "website": "https://www.iheartjane.com/dispensaries/evolve",
+      "lat": 40.149408,
+      "lon": -74.699325,
+      "source": {
+        "type": "jane",
+        "slug": "evolve",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/evolve",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Feels of Green",
+      "city": "Newton",
+      "state": "NJ",
+      "postal_code": "07860",
+      "website": "https://www.iheartjane.com/dispensaries/feels-of-green",
+      "lat": 41.019737,
+      "lon": -74.769489,
+      "source": {
+        "type": "jane",
+        "slug": "feels-of-green",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/feels-of-green",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Fire and Oak",
+      "city": "Mt Holly",
+      "state": "NJ",
+      "postal_code": "08060",
+      "website": "https://www.iheartjane.com/dispensaries/fire-and-oak",
+      "lat": 39.993073,
+      "lon": -74.788514,
+      "source": {
+        "type": "jane",
+        "slug": "fire-and-oak",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/fire-and-oak",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Flower & Flame Dispensary",
+      "city": "Blackwood",
+      "state": "NJ",
+      "postal_code": "08012",
+      "website": "https://www.iheartjane.com/dispensaries/flower-flame",
+      "lat": 39.791429,
+      "lon": -75.035681,
+      "source": {
+        "type": "jane",
+        "slug": "flower-flame",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/flower-flame",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Flowerbomb Dispensary",
+      "city": "Irvington",
+      "state": "NJ",
+      "postal_code": "07111",
+      "website": "https://www.iheartjane.com/dispensaries/flowerbomb",
+      "lat": 40.726134,
+      "lon": -74.228575,
+      "source": {
+        "type": "jane",
+        "slug": "flowerbomb",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/flowerbomb",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Fresh Dispensary Eatontown",
+      "city": "Eatontown",
+      "state": "NJ",
+      "postal_code": "07724",
+      "website": "https://www.iheartjane.com/dispensaries/fresh-eatontown",
+      "lat": 40.281322,
+      "lon": -74.046893,
+      "source": {
+        "type": "jane",
+        "slug": "fresh-eatontown",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/fresh-eatontown",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Fresh Elizabeth",
+      "city": "Elizabeth",
+      "state": "NJ",
+      "postal_code": "07202",
+      "website": "https://www.iheartjane.com/dispensaries/fresh-elizabeth",
+      "lat": 40.652971,
+      "lon": -74.213982,
+      "source": {
+        "type": "jane",
+        "slug": "fresh-elizabeth",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/fresh-elizabeth",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "G2 Dispensary",
+      "city": "Rockaway",
+      "state": "NJ",
+      "postal_code": "07866",
+      "website": "https://www.iheartjane.com/dispensaries/g2",
+      "lat": 40.886871,
+      "lon": -74.529237,
+      "source": {
+        "type": "jane",
+        "slug": "g2",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/g2",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Garden Greenz",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07302",
+      "website": "https://www.iheartjane.com/dispensaries/garden-greenz",
+      "lat": 40.72166,
+      "lon": -74.045822,
+      "source": {
+        "type": "jane",
+        "slug": "garden-greenz",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/garden-greenz",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Garden State Natural Green",
+      "city": "Kingston",
+      "state": "NJ",
+      "postal_code": "08528",
+      "website": "https://www.iheartjane.com/dispensaries/garden-state-natural-green",
+      "lat": 40.375191,
+      "lon": -74.615174,
+      "source": {
+        "type": "jane",
+        "slug": "garden-state-natural-green",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/garden-state-natural-green",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Ginger Hale",
+      "city": "Oaklyn",
+      "state": "NJ",
+      "postal_code": "08107",
+      "website": "https://www.iheartjane.com/dispensaries/ginger-hale",
+      "lat": 39.900545,
+      "lon": -75.076073,
+      "source": {
+        "type": "jane",
+        "slug": "ginger-hale",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/ginger-hale",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Golden Door Dispensary",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07306",
+      "website": "https://www.iheartjane.com/dispensaries/golden-door",
+      "lat": 40.733853,
+      "lon": -74.05821,
+      "source": {
+        "type": "jane",
+        "slug": "golden-door",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/golden-door",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Got Your Six Dispensary of New Jersey",
+      "city": "Princeton",
+      "state": "NJ",
+      "postal_code": "08540",
+      "website": "https://www.iheartjane.com/dispensaries/got-your-six-of-new-jersey",
+      "lat": 40.383623,
+      "lon": -74.600904,
+      "source": {
+        "type": "jane",
+        "slug": "got-your-six-of-new-jersey",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/got-your-six-of-new-jersey",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Green Haven Industries",
+      "city": "Elizabeth",
+      "state": "NJ",
+      "postal_code": "07206",
+      "website": "https://www.iheartjane.com/dispensaries/green-haven-industries",
+      "lat": 40.652203,
+      "lon": -74.196617,
+      "source": {
+        "type": "jane",
+        "slug": "green-haven-industries",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/green-haven-industries",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Green Knight Cannabis",
+      "city": "Somerset",
+      "state": "NJ",
+      "postal_code": "08873",
+      "website": "https://www.iheartjane.com/dispensaries/green-knight",
+      "lat": 40.489217,
+      "lon": -74.47919,
+      "source": {
+        "type": "jane",
+        "slug": "green-knight",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/green-knight",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Green Lightning Cannabis",
+      "city": "Cinnaminson",
+      "state": "NJ",
+      "postal_code": "08077",
+      "website": "https://www.iheartjane.com/dispensaries/green-lightning",
+      "lat": 40.014103,
+      "lon": -74.9774,
+      "source": {
+        "type": "jane",
+        "slug": "green-lightning",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/green-lightning",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Green Oasis Dispensary",
+      "city": "Atco",
+      "state": "NJ",
+      "postal_code": "08004",
+      "website": "https://www.iheartjane.com/dispensaries/green-oasis",
+      "lat": 39.755618,
+      "lon": -74.882085,
+      "source": {
+        "type": "jane",
+        "slug": "green-oasis",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/green-oasis",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Green Wellness Haven",
+      "city": "Pleasantville",
+      "state": "NJ",
+      "postal_code": "08232",
+      "website": "https://www.iheartjane.com/dispensaries/green-wellness-haven",
+      "lat": 39.411891,
+      "lon": -74.51565,
+      "source": {
+        "type": "jane",
+        "slug": "green-wellness-haven",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/green-wellness-haven",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Greenstop Dispensary",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07307",
+      "website": "https://www.iheartjane.com/dispensaries/greenstop",
+      "lat": 40.74869,
+      "lon": -74.060514,
+      "source": {
+        "type": "jane",
+        "slug": "greenstop",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/greenstop",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Gynsyng",
+      "city": "Merchantville",
+      "state": "NJ",
+      "postal_code": "08109",
+      "website": "https://www.iheartjane.com/dispensaries/gynsyng",
+      "lat": 39.952142,
+      "lon": -75.049156,
+      "source": {
+        "type": "jane",
+        "slug": "gynsyng",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/gynsyng",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Hackettstown Dispensary",
+      "city": "Hackettstown",
+      "state": "NJ",
+      "postal_code": "07840",
+      "website": "https://www.iheartjane.com/dispensaries/hackettstown",
+      "lat": 40.835187,
+      "lon": -74.823181,
+      "source": {
+        "type": "jane",
+        "slug": "hackettstown",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/hackettstown",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Hamm & Chaz Cannabis Dispensary",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07306",
+      "website": "https://www.iheartjane.com/dispensaries/hamm-chaz",
+      "lat": 40.726049,
+      "lon": -74.077437,
+      "source": {
+        "type": "jane",
+        "slug": "hamm-chaz",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/hamm-chaz",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Happy Leaf",
+      "city": "Somerdale",
+      "state": "NJ",
+      "postal_code": "08083",
+      "website": "https://www.iheartjane.com/dispensaries/happy-leaf",
+      "lat": 39.841244,
+      "lon": -75.014096,
+      "source": {
+        "type": "jane",
+        "slug": "happy-leaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/happy-leaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Hashery",
+      "city": "Hackensack",
+      "state": "NJ",
+      "postal_code": "07601",
+      "website": "https://www.iheartjane.com/dispensaries/hashery",
+      "lat": 40.878658,
+      "lon": -74.066593,
+      "source": {
+        "type": "jane",
+        "slug": "hashery",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/hashery",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Hashstoria NJ",
+      "city": "Newark",
+      "state": "NJ",
+      "postal_code": "07102",
+      "website": "https://www.iheartjane.com/dispensaries/hashstoria-nj",
+      "lat": 40.735269,
+      "lon": -74.172598,
+      "source": {
+        "type": "jane",
+        "slug": "hashstoria-nj",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/hashstoria-nj",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Hello High",
+      "city": "Hammonton",
+      "state": "NJ",
+      "postal_code": "08037",
+      "website": "https://www.iheartjane.com/dispensaries/hello-high",
+      "lat": 39.565697,
+      "lon": -74.817973,
+      "source": {
+        "type": "jane",
+        "slug": "hello-high",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/hello-high",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Herb's Premium Dispensary",
+      "city": "Somerset",
+      "state": "NJ",
+      "postal_code": "08873",
+      "website": "https://www.iheartjane.com/dispensaries/herb-s-premium",
+      "lat": 40.483978,
+      "lon": -74.480562,
+      "source": {
+        "type": "jane",
+        "slug": "herb-s-premium",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/herb-s-premium",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Herbalicity",
+      "city": "Highland Park",
+      "state": "NJ",
+      "postal_code": "08904",
+      "website": "https://www.iheartjane.com/dispensaries/herbalicity",
+      "lat": 40.498857,
+      "lon": -74.428073,
+      "source": {
+        "type": "jane",
+        "slug": "herbalicity",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/herbalicity",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "High Profile Lakehurst",
+      "city": "Lakehurst",
+      "state": "NJ",
+      "postal_code": "08733",
+      "website": "https://www.iheartjane.com/dispensaries/high-profile-lakehurst",
+      "lat": 40.015346,
+      "lon": -74.315198,
+      "source": {
+        "type": "jane",
+        "slug": "high-profile-lakehurst",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/high-profile-lakehurst",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "High Profile of Somerdale Dispensary",
+      "city": "Somerdale",
+      "state": "NJ",
+      "postal_code": "08083",
+      "website": "https://www.iheartjane.com/dispensaries/high-profile-of-somerdale",
+      "lat": 39.831994,
+      "lon": -75.005065,
+      "source": {
+        "type": "jane",
+        "slug": "high-profile-of-somerdale",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/high-profile-of-somerdale",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "High Rollers Dispensary",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/high-rollers",
+      "lat": 39.35764,
+      "lon": -74.431871,
+      "source": {
+        "type": "jane",
+        "slug": "high-rollers",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/high-rollers",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "High Street Dispensary",
+      "city": "Hackettstown",
+      "state": "NJ",
+      "postal_code": "07840",
+      "website": "https://www.iheartjane.com/dispensaries/high-street",
+      "lat": 40.864304,
+      "lon": -74.827326,
+      "source": {
+        "type": "jane",
+        "slug": "high-street",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/high-street",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Highway 90",
+      "city": "Evesham",
+      "state": "NJ",
+      "postal_code": "08053",
+      "website": "https://www.iheartjane.com/dispensaries/highway-90",
+      "lat": 39.90153,
+      "lon": -74.92957,
+      "source": {
+        "type": "jane",
+        "slug": "highway-90",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/highway-90",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Holistic Re-Leaf",
+      "city": "Rockaway",
+      "state": "NJ",
+      "postal_code": "07866",
+      "website": "https://www.iheartjane.com/dispensaries/holistic-re-leaf",
+      "lat": 40.9096,
+      "lon": -74.549261,
+      "source": {
+        "type": "jane",
+        "slug": "holistic-re-leaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/holistic-re-leaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Honey Buzz Farms",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/honey-buzz-farms",
+      "lat": 39.360019,
+      "lon": -74.432431,
+      "source": {
+        "type": "jane",
+        "slug": "honey-buzz-farms",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/honey-buzz-farms",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "HudHaus",
+      "city": "North Bergen",
+      "state": "NJ",
+      "postal_code": "07047",
+      "website": "https://www.iheartjane.com/dispensaries/hudhaus",
+      "lat": 40.805067,
+      "lon": -73.993288,
+      "source": {
+        "type": "jane",
+        "slug": "hudhaus",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/hudhaus",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Hudsonica Inc.",
+      "city": "Hoboken",
+      "state": "NJ",
+      "postal_code": "07030",
+      "website": "https://www.iheartjane.com/dispensaries/hudsonica",
+      "lat": 40.755171,
+      "lon": -74.031143,
+      "source": {
+        "type": "jane",
+        "slug": "hudsonica",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/hudsonica",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "HZY Goods",
+      "city": "East Orange",
+      "state": "NJ",
+      "postal_code": "07017",
+      "website": "https://www.iheartjane.com/dispensaries/hzy-goods",
+      "lat": 40.767496,
+      "lon": -74.217391,
+      "source": {
+        "type": "jane",
+        "slug": "hzy-goods",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/hzy-goods",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Indigo",
+      "city": "Brooklawn",
+      "state": "NJ",
+      "postal_code": "08030",
+      "website": "https://www.iheartjane.com/dispensaries/indigo",
+      "lat": 39.875536,
+      "lon": -75.121182,
+      "source": {
+        "type": "jane",
+        "slug": "indigo",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/indigo",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "INSA Coastline Dispensary",
+      "city": "Cape May Court House",
+      "state": "NJ",
+      "postal_code": "08210",
+      "website": "https://www.iheartjane.com/dispensaries/insa-coastline",
+      "lat": 39.128874,
+      "lon": -74.780475,
+      "source": {
+        "type": "jane",
+        "slug": "insa-coastline",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/insa-coastline",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Island Vibez",
+      "city": "Plainfield",
+      "state": "NJ",
+      "postal_code": "07060",
+      "website": "https://www.iheartjane.com/dispensaries/island-vibez",
+      "lat": 40.622459,
+      "lon": -74.421361,
+      "source": {
+        "type": "jane",
+        "slug": "island-vibez",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/island-vibez",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "J & J Cannabis Dispensary",
+      "city": "Oak Ridge",
+      "state": "NJ",
+      "postal_code": "07438",
+      "website": "https://www.iheartjane.com/dispensaries/j-j",
+      "lat": 41.05648,
+      "lon": -74.466493,
+      "source": {
+        "type": "jane",
+        "slug": "j-j",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/j-j",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "JC Element",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07307",
+      "website": "https://www.iheartjane.com/dispensaries/jc-element",
+      "lat": 40.74765,
+      "lon": -74.048409,
+      "source": {
+        "type": "jane",
+        "slug": "jc-element",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/jc-element",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Jersey Dispensary",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07304",
+      "website": "https://www.iheartjane.com/dispensaries/jersey",
+      "lat": 40.7183,
+      "lon": -74.074356,
+      "source": {
+        "type": "jane",
+        "slug": "jersey",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/jersey",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Jersey Leaf",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07304",
+      "website": "https://www.iheartjane.com/dispensaries/jersey-leaf",
+      "lat": 40.719777,
+      "lon": -74.082017,
+      "source": {
+        "type": "jane",
+        "slug": "jersey-leaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/jersey-leaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Jersey Meds",
+      "city": "Pennington",
+      "state": "NJ",
+      "postal_code": "08534",
+      "website": "https://www.iheartjane.com/dispensaries/jersey-meds",
+      "lat": 40.325821,
+      "lon": -74.79933,
+      "source": {
+        "type": "jane",
+        "slug": "jersey-meds",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/jersey-meds",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Jersey Roots",
+      "city": "West Milford",
+      "state": "NJ",
+      "postal_code": "07480",
+      "website": "https://www.iheartjane.com/dispensaries/jersey-roots",
+      "lat": 41.127854,
+      "lon": -74.373206,
+      "source": {
+        "type": "jane",
+        "slug": "jersey-roots",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/jersey-roots",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Jester's Joint",
+      "city": "New Brunswick",
+      "state": "NJ",
+      "postal_code": "08901",
+      "website": "https://www.iheartjane.com/dispensaries/jester-s-joint",
+      "lat": 40.497998,
+      "lon": -74.449836,
+      "source": {
+        "type": "jane",
+        "slug": "jester-s-joint",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/jester-s-joint",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Joy Leaf",
+      "city": "Roselle Park",
+      "state": "NJ",
+      "postal_code": "07204",
+      "website": "https://www.iheartjane.com/dispensaries/joy-leaf",
+      "lat": 40.662973,
+      "lon": -74.246375,
+      "source": {
+        "type": "jane",
+        "slug": "joy-leaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/joy-leaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Kind Kush",
+      "city": "Rockaway",
+      "state": "NJ",
+      "postal_code": "07866",
+      "website": "https://www.iheartjane.com/dispensaries/kind-kush",
+      "lat": 40.891118,
+      "lon": -74.515001,
+      "source": {
+        "type": "jane",
+        "slug": "kind-kush",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/kind-kush",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Kine Buds Maywood",
+      "city": "Maywood",
+      "state": "NJ",
+      "postal_code": "07607",
+      "website": "https://www.iheartjane.com/dispensaries/kine-buds-maywood",
+      "lat": 40.862252,
+      "lon": -74.112637,
+      "source": {
+        "type": "jane",
+        "slug": "kine-buds-maywood",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/kine-buds-maywood",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "La Vida Gardens",
+      "city": "Belleville",
+      "state": "NJ",
+      "postal_code": "07109",
+      "website": "https://www.iheartjane.com/dispensaries/la-vida-gardens",
+      "lat": 40.798628,
+      "lon": -74.148201,
+      "source": {
+        "type": "jane",
+        "slug": "la-vida-gardens",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/la-vida-gardens",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Lady L Cannabis",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07304",
+      "website": "https://www.iheartjane.com/dispensaries/lady-l",
+      "lat": 40.719532,
+      "lon": -74.082734,
+      "source": {
+        "type": "jane",
+        "slug": "lady-l",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/lady-l",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Leaf Haus",
+      "city": "Somerset",
+      "state": "NJ",
+      "postal_code": "08873",
+      "website": "https://www.iheartjane.com/dispensaries/leaf-haus",
+      "lat": 40.510412,
+      "lon": -74.485441,
+      "source": {
+        "type": "jane",
+        "slug": "leaf-haus",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/leaf-haus",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Leaf Joint",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07307",
+      "website": "https://www.iheartjane.com/dispensaries/leaf-joint",
+      "lat": 40.748233,
+      "lon": -74.048117,
+      "source": {
+        "type": "jane",
+        "slug": "leaf-joint",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/leaf-joint",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Legacy to Lifted",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07304",
+      "website": "https://www.iheartjane.com/dispensaries/legacy-to-lifted",
+      "lat": 40.717672,
+      "lon": -74.084113,
+      "source": {
+        "type": "jane",
+        "slug": "legacy-to-lifted",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/legacy-to-lifted",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Legal Distribution",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/legal-distribution",
+      "lat": 39.353238,
+      "lon": -74.449352,
+      "source": {
+        "type": "jane",
+        "slug": "legal-distribution",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/legal-distribution",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Lemon 22",
+      "city": "Scotch Plains",
+      "state": "NJ",
+      "postal_code": "07076",
+      "website": "https://www.iheartjane.com/dispensaries/lemon-22",
+      "lat": 40.656929,
+      "lon": -74.399648,
+      "source": {
+        "type": "jane",
+        "slug": "lemon-22",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/lemon-22",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Loud House",
+      "city": "Camden",
+      "state": "NJ",
+      "postal_code": "08102",
+      "website": "https://www.iheartjane.com/dispensaries/loud-house",
+      "lat": 39.946299,
+      "lon": -75.123596,
+      "source": {
+        "type": "jane",
+        "slug": "loud-house",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/loud-house",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Mad Hatter Dispensary",
+      "city": "Avenel",
+      "state": "NJ",
+      "postal_code": "07001",
+      "website": "https://www.iheartjane.com/dispensaries/mad-hatter",
+      "lat": 40.581154,
+      "lon": -74.284466,
+      "source": {
+        "type": "jane",
+        "slug": "mad-hatter",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/mad-hatter",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Main Street Dispensary",
+      "city": "Highland Park",
+      "state": "NJ",
+      "postal_code": "08904",
+      "website": "https://www.iheartjane.com/dispensaries/main-street",
+      "lat": 40.499456,
+      "lon": -74.427419,
+      "source": {
+        "type": "jane",
+        "slug": "main-street",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/main-street",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Mass Grown",
+      "city": "Mt Holly",
+      "state": "NJ",
+      "postal_code": "08060",
+      "website": "https://www.iheartjane.com/dispensaries/mass-grown",
+      "lat": 39.993024,
+      "lon": -74.786688,
+      "source": {
+        "type": "jane",
+        "slug": "mass-grown",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/mass-grown",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Med Leaf",
+      "city": "Egg Harbor City",
+      "state": "NJ",
+      "postal_code": "08215",
+      "website": "https://www.iheartjane.com/dispensaries/med-leaf",
+      "lat": 39.530417,
+      "lon": -74.646239,
+      "source": {
+        "type": "jane",
+        "slug": "med-leaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/med-leaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Midnight Greens",
+      "city": "Blackwood",
+      "state": "NJ",
+      "postal_code": "08012",
+      "website": "https://www.iheartjane.com/dispensaries/midnight-greens",
+      "lat": 39.751258,
+      "lon": -75.045353,
+      "source": {
+        "type": "jane",
+        "slug": "midnight-greens",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/midnight-greens",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Milligrams",
+      "city": "Mt Laurel Township",
+      "state": "NJ",
+      "postal_code": "08054",
+      "website": "https://www.iheartjane.com/dispensaries/milligrams",
+      "lat": 39.942432,
+      "lon": -74.952422,
+      "source": {
+        "type": "jane",
+        "slug": "milligrams",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/milligrams",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "MindLift Dispensary",
+      "city": "Plainfield",
+      "state": "NJ",
+      "postal_code": "07060",
+      "website": "https://www.iheartjane.com/dispensaries/mindlift",
+      "lat": 40.616052,
+      "lon": -74.418665,
+      "source": {
+        "type": "jane",
+        "slug": "mindlift",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/mindlift",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "MMD NJ",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07306",
+      "website": "https://www.iheartjane.com/dispensaries/mmd-nj",
+      "lat": 40.734046,
+      "lon": -74.058892,
+      "source": {
+        "type": "jane",
+        "slug": "mmd-nj",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/mmd-nj",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Moja Life",
+      "city": "Trenton",
+      "state": "NJ",
+      "postal_code": "08608",
+      "website": "https://www.iheartjane.com/dispensaries/moja-life",
+      "lat": 40.219499,
+      "lon": -74.765774,
+      "source": {
+        "type": "jane",
+        "slug": "moja-life",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/moja-life",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Molly Ann Farms",
+      "city": "Haledon",
+      "state": "NJ",
+      "postal_code": "07508",
+      "website": "https://www.iheartjane.com/dispensaries/molly-ann-farms",
+      "lat": 40.931789,
+      "lon": -74.183751,
+      "source": {
+        "type": "jane",
+        "slug": "molly-ann-farms",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/molly-ann-farms",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Mountain Dispensary",
+      "city": "Vernon Township",
+      "state": "NJ",
+      "postal_code": "07462",
+      "website": "https://www.iheartjane.com/dispensaries/mountain",
+      "lat": 41.174509,
+      "lon": -74.545711,
+      "source": {
+        "type": "jane",
+        "slug": "mountain",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/mountain",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Mountain View Farmacy",
+      "city": "Oak Ridge",
+      "state": "NJ",
+      "postal_code": "07438",
+      "website": "https://www.iheartjane.com/dispensaries/mountain-view-farmacy",
+      "lat": 41.051785,
+      "lon": -74.463664,
+      "source": {
+        "type": "jane",
+        "slug": "mountain-view-farmacy",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/mountain-view-farmacy",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "NAR Cannabis",
+      "city": "Mt Laurel Township",
+      "state": "NJ",
+      "postal_code": "08054",
+      "website": "https://www.iheartjane.com/dispensaries/nar",
+      "lat": 39.925218,
+      "lon": -74.962662,
+      "source": {
+        "type": "jane",
+        "slug": "nar",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/nar",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Natural Apothecary",
+      "city": "Belleville",
+      "state": "NJ",
+      "postal_code": "07109",
+      "website": "https://www.iheartjane.com/dispensaries/natural-apothecary",
+      "lat": 40.782187,
+      "lon": -74.154468,
+      "source": {
+        "type": "jane",
+        "slug": "natural-apothecary",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/natural-apothecary",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Natureâ€™s Motivation",
+      "city": "Irvington",
+      "state": "NJ",
+      "postal_code": "07111",
+      "website": "https://www.iheartjane.com/dispensaries/nature-s-motivation",
+      "lat": 40.726379,
+      "lon": -74.227681,
+      "source": {
+        "type": "jane",
+        "slug": "nature-s-motivation",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/nature-s-motivation",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Nevaeh Verde Dispensary",
+      "city": "Belleville",
+      "state": "NJ",
+      "postal_code": "07109",
+      "website": "https://www.iheartjane.com/dispensaries/nevaeh-verde",
+      "lat": 40.780007,
+      "lon": -74.181486,
+      "source": {
+        "type": "jane",
+        "slug": "nevaeh-verde",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/nevaeh-verde",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "New Era Dispensary",
+      "city": "South Bound Brook",
+      "state": "NJ",
+      "postal_code": "08880",
+      "website": "https://www.iheartjane.com/dispensaries/new-era",
+      "lat": 40.569045,
+      "lon": -74.614139,
+      "source": {
+        "type": "jane",
+        "slug": "new-era",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/new-era",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "New Frontier Solutions",
+      "city": "Salem",
+      "state": "NJ",
+      "postal_code": "08079",
+      "website": "https://www.iheartjane.com/dispensaries/new-frontier-solutions",
+      "lat": 39.561887,
+      "lon": -75.454944,
+      "source": {
+        "type": "jane",
+        "slug": "new-frontier-solutions",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/new-frontier-solutions",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Nightjar",
+      "city": "Bloomfield",
+      "state": "NJ",
+      "postal_code": "07003",
+      "website": "https://www.iheartjane.com/dispensaries/nightjar",
+      "lat": 40.792809,
+      "lon": -74.197107,
+      "source": {
+        "type": "jane",
+        "slug": "nightjar",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/nightjar",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Nile of NJ",
+      "city": "West New York",
+      "state": "NJ",
+      "postal_code": "07093",
+      "website": "https://www.iheartjane.com/dispensaries/nile-of-nj",
+      "lat": 40.785098,
+      "lon": -74.019137,
+      "source": {
+        "type": "jane",
+        "slug": "nile-of-nj",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/nile-of-nj",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Nirvana",
+      "city": "Mt Laurel Township",
+      "state": "NJ",
+      "postal_code": "08054",
+      "website": "https://www.iheartjane.com/dispensaries/nirvana",
+      "lat": 39.926687,
+      "lon": -74.954111,
+      "source": {
+        "type": "jane",
+        "slug": "nirvana",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/nirvana",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "NJ Pure",
+      "city": "Edgewater Park",
+      "state": "NJ",
+      "postal_code": "08010",
+      "website": "https://www.iheartjane.com/dispensaries/nj-pure",
+      "lat": 40.068403,
+      "lon": -74.896125,
+      "source": {
+        "type": "jane",
+        "slug": "nj-pure",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/nj-pure",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Noire Dispensary",
+      "city": "Maplewood",
+      "state": "NJ",
+      "postal_code": "07040",
+      "website": "https://www.iheartjane.com/dispensaries/noire",
+      "lat": 40.73087,
+      "lon": -74.278294,
+      "source": {
+        "type": "jane",
+        "slug": "noire",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/noire",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Northeast Alternatives Dispensary",
+      "city": "Hamilton Township",
+      "state": "NJ",
+      "postal_code": "08691",
+      "website": "https://www.iheartjane.com/dispensaries/northeast-alternatives",
+      "lat": 40.196778,
+      "lon": -74.641539,
+      "source": {
+        "type": "jane",
+        "slug": "northeast-alternatives",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/northeast-alternatives",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Nova Farms",
+      "city": "Woodbury",
+      "state": "NJ",
+      "postal_code": "08096",
+      "website": "https://www.iheartjane.com/dispensaries/nova-farms",
+      "lat": 39.826276,
+      "lon": -75.159242,
+      "source": {
+        "type": "jane",
+        "slug": "nova-farms",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/nova-farms",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Ohm Theory",
+      "city": "Elmwood Park",
+      "state": "NJ",
+      "postal_code": "07407",
+      "website": "https://www.iheartjane.com/dispensaries/ohm-theory",
+      "lat": 40.893692,
+      "lon": -74.116923,
+      "source": {
+        "type": "jane",
+        "slug": "ohm-theory",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/ohm-theory",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "One Green Leaf",
+      "city": "Gibbsboro",
+      "state": "NJ",
+      "postal_code": "08026",
+      "website": "https://www.iheartjane.com/dispensaries/one-green-leaf",
+      "lat": 39.843931,
+      "lon": -74.970031,
+      "source": {
+        "type": "jane",
+        "slug": "one-green-leaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/one-green-leaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Organic Farms",
+      "city": "Camden",
+      "state": "NJ",
+      "postal_code": "08104",
+      "website": "https://www.iheartjane.com/dispensaries/organic-farms",
+      "lat": 39.907687,
+      "lon": -75.097092,
+      "source": {
+        "type": "jane",
+        "slug": "organic-farms",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/organic-farms",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "OTC Jersey",
+      "city": "Absecon",
+      "state": "NJ",
+      "postal_code": "08201",
+      "website": "https://www.iheartjane.com/dispensaries/otc-jersey",
+      "lat": 39.425867,
+      "lon": -74.501811,
+      "source": {
+        "type": "jane",
+        "slug": "otc-jersey",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/otc-jersey",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Phasal",
+      "city": "Runnemede",
+      "state": "NJ",
+      "postal_code": "08078",
+      "website": "https://www.iheartjane.com/dispensaries/phasal",
+      "lat": 39.858762,
+      "lon": -75.075967,
+      "source": {
+        "type": "jane",
+        "slug": "phasal",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/phasal",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Phula",
+      "city": "Mt Holly",
+      "state": "NJ",
+      "postal_code": "08060",
+      "website": "https://www.iheartjane.com/dispensaries/phula",
+      "lat": 39.994643,
+      "lon": -74.788019,
+      "source": {
+        "type": "jane",
+        "slug": "phula",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/phula",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Plant Base",
+      "city": "Plainfield",
+      "state": "NJ",
+      "postal_code": "07060",
+      "website": "https://www.iheartjane.com/dispensaries/plant-base",
+      "lat": 40.619034,
+      "lon": -74.421448,
+      "source": {
+        "type": "jane",
+        "slug": "plant-base",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/plant-base",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Plantabis",
+      "city": "Rahway",
+      "state": "NJ",
+      "postal_code": "07065",
+      "website": "https://www.iheartjane.com/dispensaries/plantabis",
+      "lat": 40.607877,
+      "lon": -74.260149,
+      "source": {
+        "type": "jane",
+        "slug": "plantabis",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/plantabis",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Plantopia",
+      "city": "Englishtown",
+      "state": "NJ",
+      "postal_code": "07726",
+      "website": "https://www.iheartjane.com/dispensaries/plantopia",
+      "lat": 40.297867,
+      "lon": -74.358841,
+      "source": {
+        "type": "jane",
+        "slug": "plantopia",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/plantopia",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "PPP Dispensary",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/ppp",
+      "lat": 39.354243,
+      "lon": -74.448334,
+      "source": {
+        "type": "jane",
+        "slug": "ppp",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/ppp",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Premo",
+      "city": "Keyport",
+      "state": "NJ",
+      "postal_code": "07735",
+      "website": "https://www.iheartjane.com/dispensaries/premo",
+      "lat": 40.437321,
+      "lon": -74.20138,
+      "source": {
+        "type": "jane",
+        "slug": "premo",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/premo",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Public Absecon",
+      "city": "Absecon",
+      "state": "NJ",
+      "postal_code": "08201",
+      "website": "https://www.iheartjane.com/dispensaries/public-absecon",
+      "lat": 39.437337,
+      "lon": -74.517184,
+      "source": {
+        "type": "jane",
+        "slug": "public-absecon",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/public-absecon",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Puffin Store",
+      "city": "New Brunswick",
+      "state": "NJ",
+      "postal_code": "08901",
+      "website": "https://www.iheartjane.com/dispensaries/puffin",
+      "lat": 40.49582,
+      "lon": -74.444331,
+      "source": {
+        "type": "jane",
+        "slug": "puffin",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/puffin",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Pure Blossom",
+      "city": "Pennington",
+      "state": "NJ",
+      "postal_code": "08534",
+      "website": "https://www.iheartjane.com/dispensaries/pure-blossom",
+      "lat": 40.307168,
+      "lon": -74.784947,
+      "source": {
+        "type": "jane",
+        "slug": "pure-blossom",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/pure-blossom",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Pure Natural Vibes",
+      "city": "West Orange",
+      "state": "NJ",
+      "postal_code": "07052",
+      "website": "https://www.iheartjane.com/dispensaries/pure-natural-vibes",
+      "lat": 40.79087,
+      "lon": -74.254494,
+      "source": {
+        "type": "jane",
+        "slug": "pure-natural-vibes",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/pure-natural-vibes",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Quality Roots",
+      "city": "Marlton",
+      "state": "NJ",
+      "postal_code": "08053",
+      "website": "https://www.iheartjane.com/dispensaries/quality-roots",
+      "lat": 39.895348,
+      "lon": -74.942079,
+      "source": {
+        "type": "jane",
+        "slug": "quality-roots",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/quality-roots",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Queen City Remedies",
+      "city": "Plainfield",
+      "state": "NJ",
+      "postal_code": "07062",
+      "website": "https://www.iheartjane.com/dispensaries/queen-city-remedies",
+      "lat": 40.633135,
+      "lon": -74.396392,
+      "source": {
+        "type": "jane",
+        "slug": "queen-city-remedies",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/queen-city-remedies",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Releaf Cannabis",
+      "city": "Williamstown",
+      "state": "NJ",
+      "postal_code": "08094",
+      "website": "https://www.iheartjane.com/dispensaries/releaf",
+      "lat": 39.67611,
+      "lon": -74.980721,
+      "source": {
+        "type": "jane",
+        "slug": "releaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/releaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "RushBudz Dispensary",
+      "city": "South Bound Brook",
+      "state": "NJ",
+      "postal_code": "08880",
+      "website": "https://www.iheartjane.com/dispensaries/rushbudz",
+      "lat": 40.554242,
+      "lon": -74.524863,
+      "source": {
+        "type": "jane",
+        "slug": "rushbudz",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/rushbudz",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Ruuted",
+      "city": "Englishtown",
+      "state": "NJ",
+      "postal_code": "07726",
+      "website": "https://www.iheartjane.com/dispensaries/ruuted",
+      "lat": 40.295289,
+      "lon": -74.358089,
+      "source": {
+        "type": "jane",
+        "slug": "ruuted",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/ruuted",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Salt Air Botanicals",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/salt-air-botanicals",
+      "lat": 39.364729,
+      "lon": -74.426005,
+      "source": {
+        "type": "jane",
+        "slug": "salt-air-botanicals",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/salt-air-botanicals",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Scarlet Reserve Room",
+      "city": "Englishtown",
+      "state": "NJ",
+      "postal_code": "07726",
+      "website": "https://www.iheartjane.com/dispensaries/scarlet-reserve-room",
+      "lat": 40.296292,
+      "lon": -74.357847,
+      "source": {
+        "type": "jane",
+        "slug": "scarlet-reserve-room",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/scarlet-reserve-room",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Sea & Leaf",
+      "city": "North Cape May",
+      "state": "NJ",
+      "postal_code": "08204",
+      "website": "https://www.iheartjane.com/dispensaries/sea-leaf",
+      "lat": 38.974359,
+      "lon": -74.943579,
+      "source": {
+        "type": "jane",
+        "slug": "sea-leaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/sea-leaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Shipwreck'd",
+      "city": "Neptune City",
+      "state": "NJ",
+      "postal_code": "07753",
+      "website": "https://www.iheartjane.com/dispensaries/shipwreck-d",
+      "lat": 40.205728,
+      "lon": -74.046754,
+      "source": {
+        "type": "jane",
+        "slug": "shipwreck-d",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/shipwreck-d",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Shore House Canna",
+      "city": "Cape May",
+      "state": "NJ",
+      "postal_code": "08204",
+      "website": "https://www.iheartjane.com/dispensaries/shore-house-canna",
+      "lat": 38.935367,
+      "lon": -74.932765,
+      "source": {
+        "type": "jane",
+        "slug": "shore-house-canna",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/shore-house-canna",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Simply Pure Trenton",
+      "city": "Ewing Township",
+      "state": "NJ",
+      "postal_code": "08638",
+      "website": "https://www.iheartjane.com/dispensaries/simply-pure-trenton",
+      "lat": 40.240788,
+      "lon": -74.754341,
+      "source": {
+        "type": "jane",
+        "slug": "simply-pure-trenton",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/simply-pure-trenton",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Sky Cannabis",
+      "city": "Hopewell",
+      "state": "NJ",
+      "postal_code": "08525",
+      "website": "https://www.iheartjane.com/dispensaries/sky",
+      "lat": 40.390944,
+      "lon": -74.757715,
+      "source": {
+        "type": "jane",
+        "slug": "sky",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/sky",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Social Dispensary",
+      "city": "Bridgeton",
+      "state": "NJ",
+      "postal_code": "08302",
+      "website": "https://www.iheartjane.com/dispensaries/social",
+      "lat": 39.444695,
+      "lon": -75.221758,
+      "source": {
+        "type": "jane",
+        "slug": "social",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/social",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Somerset Green",
+      "city": "Somerset",
+      "state": "NJ",
+      "postal_code": "08873",
+      "website": "https://www.iheartjane.com/dispensaries/somerset-green",
+      "lat": 40.484774,
+      "lon": -74.476412,
+      "source": {
+        "type": "jane",
+        "slug": "somerset-green",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/somerset-green",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Soulflora",
+      "city": "Newfoundland",
+      "state": "NJ",
+      "postal_code": "07435",
+      "website": "https://www.iheartjane.com/dispensaries/soulflora",
+      "lat": 41.047861,
+      "lon": -74.439907,
+      "source": {
+        "type": "jane",
+        "slug": "soulflora",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/soulflora",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Sparkology",
+      "city": "Franklin Park",
+      "state": "NJ",
+      "postal_code": "08823",
+      "website": "https://www.iheartjane.com/dispensaries/sparkology",
+      "lat": 40.441734,
+      "lon": -74.530924,
+      "source": {
+        "type": "jane",
+        "slug": "sparkology",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/sparkology",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Spot 23 LLC",
+      "city": "Newfoundland",
+      "state": "NJ",
+      "postal_code": "07435",
+      "website": "https://www.iheartjane.com/dispensaries/spot-23",
+      "lat": 41.053071,
+      "lon": -74.454704,
+      "source": {
+        "type": "jane",
+        "slug": "spot-23",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/spot-23",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Springfield Ave Dispensary",
+      "city": "Irvington",
+      "state": "NJ",
+      "postal_code": "07111",
+      "website": "https://www.iheartjane.com/dispensaries/springfield-ave",
+      "lat": 40.726055,
+      "lon": -74.232229,
+      "source": {
+        "type": "jane",
+        "slug": "springfield-ave",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/springfield-ave",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Story Dispensary of Springfield",
+      "city": "Springfield",
+      "state": "NJ",
+      "postal_code": "07081",
+      "website": "https://www.iheartjane.com/dispensaries/story-of-springfield",
+      "lat": 40.686797,
+      "lon": -74.317002,
+      "source": {
+        "type": "jane",
+        "slug": "story-of-springfield",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/story-of-springfield",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "SunnyTien",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/sunnytien",
+      "lat": 39.353635,
+      "lon": -74.448234,
+      "source": {
+        "type": "jane",
+        "slug": "sunnytien",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/sunnytien",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Sussex Pharms",
+      "city": "Sussex",
+      "state": "NJ",
+      "postal_code": "07461",
+      "website": "https://www.iheartjane.com/dispensaries/sussex-pharms",
+      "lat": 41.209352,
+      "lon": -74.607602,
+      "source": {
+        "type": "jane",
+        "slug": "sussex-pharms",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/sussex-pharms",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Sweet Leaf's LLC",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/sweet-leaf-s",
+      "lat": 39.361416,
+      "lon": -74.427356,
+      "source": {
+        "type": "jane",
+        "slug": "sweet-leaf-s",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/sweet-leaf-s",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Sweetspot Dispensary Maplewood",
+      "city": "Maplewood",
+      "state": "NJ",
+      "postal_code": "07040",
+      "website": "https://www.iheartjane.com/dispensaries/sweetspot-maplewood",
+      "lat": 40.730961,
+      "lon": -74.244199,
+      "source": {
+        "type": "jane",
+        "slug": "sweetspot-maplewood",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/sweetspot-maplewood",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Sweetspot River Edge",
+      "city": "River Edge",
+      "state": "NJ",
+      "postal_code": "07661",
+      "website": "https://www.iheartjane.com/dispensaries/sweetspot-river-edge",
+      "lat": 40.919262,
+      "lon": -74.065495,
+      "source": {
+        "type": "jane",
+        "slug": "sweetspot-river-edge",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/sweetspot-river-edge",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Taste of Earth",
+      "city": "Buena",
+      "state": "NJ",
+      "postal_code": "08310",
+      "website": "https://www.iheartjane.com/dispensaries/taste-of-earth",
+      "lat": 39.512974,
+      "lon": -74.926663,
+      "source": {
+        "type": "jane",
+        "slug": "taste-of-earth",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/taste-of-earth",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Cannabis Place",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07305",
+      "website": "https://www.iheartjane.com/dispensaries/place",
+      "lat": 40.694091,
+      "lon": -74.100408,
+      "source": {
+        "type": "jane",
+        "slug": "place",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/place",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Dispensary of Saddle Brook",
+      "city": "Saddle Brook",
+      "state": "NJ",
+      "postal_code": "07663",
+      "website": "https://www.iheartjane.com/dispensaries/of-saddle-brook",
+      "lat": 40.889397,
+      "lon": -74.093896,
+      "source": {
+        "type": "jane",
+        "slug": "of-saddle-brook",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/of-saddle-brook",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Frosted Nug at Red Bank",
+      "city": "Red Bank",
+      "state": "NJ",
+      "postal_code": "07701",
+      "website": "https://www.iheartjane.com/dispensaries/frosted-nug-at-red-bank",
+      "lat": 40.35046,
+      "lon": -74.075098,
+      "source": {
+        "type": "jane",
+        "slug": "frosted-nug-at-red-bank",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/frosted-nug-at-red-bank",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Goods Supply Co. Victory Gardens, LLC",
+      "city": "Dover",
+      "state": "NJ",
+      "postal_code": "07801",
+      "website": "https://www.iheartjane.com/dispensaries/goods-supply-victory-gardens",
+      "lat": 40.878133,
+      "lon": -74.539636,
+      "source": {
+        "type": "jane",
+        "slug": "goods-supply-victory-gardens",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/goods-supply-victory-gardens",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Healing Side",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/healing-side",
+      "lat": 39.35551,
+      "lon": -74.440424,
+      "source": {
+        "type": "jane",
+        "slug": "healing-side",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/healing-side",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Honorable Plant",
+      "city": "Highlands",
+      "state": "NJ",
+      "postal_code": "07732",
+      "website": "https://www.iheartjane.com/dispensaries/honorable-plant",
+      "lat": 40.400244,
+      "lon": -73.985413,
+      "source": {
+        "type": "jane",
+        "slug": "honorable-plant",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/honorable-plant",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Jersey Joint Dispensary",
+      "city": "Glassboro",
+      "state": "NJ",
+      "postal_code": "08028",
+      "website": "https://www.iheartjane.com/dispensaries/jersey-joint",
+      "lat": 39.702148,
+      "lon": -75.107027,
+      "source": {
+        "type": "jane",
+        "slug": "jersey-joint",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/jersey-joint",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Leaf and Seed Dispensary",
+      "city": "Clementon",
+      "state": "NJ",
+      "postal_code": "08021",
+      "website": "https://www.iheartjane.com/dispensaries/leaf-and-seed",
+      "lat": 39.806298,
+      "lon": -74.970431,
+      "source": {
+        "type": "jane",
+        "slug": "leaf-and-seed",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/leaf-and-seed",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Library of New Jersey",
+      "city": "West Orange",
+      "state": "NJ",
+      "postal_code": "07052",
+      "website": "https://www.iheartjane.com/dispensaries/library-of-new-jersey",
+      "lat": 40.784997,
+      "lon": -74.226608,
+      "source": {
+        "type": "jane",
+        "slug": "library-of-new-jersey",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/library-of-new-jersey",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Medicine Woman",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07307",
+      "website": "https://www.iheartjane.com/dispensaries/medicine-woman",
+      "lat": 40.752911,
+      "lon": -74.057037,
+      "source": {
+        "type": "jane",
+        "slug": "medicine-woman",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/medicine-woman",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Other Side Dispensary",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07307",
+      "website": "https://www.iheartjane.com/dispensaries/other-side",
+      "lat": 40.749254,
+      "lon": -74.041405,
+      "source": {
+        "type": "jane",
+        "slug": "other-side",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/other-side",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Social Leaf",
+      "city": "Toms River",
+      "state": "NJ",
+      "postal_code": "08757",
+      "website": "https://www.iheartjane.com/dispensaries/social-leaf",
+      "lat": 39.949298,
+      "lon": -74.198013,
+      "source": {
+        "type": "jane",
+        "slug": "social-leaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/social-leaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The THC Shop",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/thc",
+      "lat": 39.359886,
+      "lon": -74.432739,
+      "source": {
+        "type": "jane",
+        "slug": "thc",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/thc",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Wildflower Market",
+      "city": "Eatontown",
+      "state": "NJ",
+      "postal_code": "07724",
+      "website": "https://www.iheartjane.com/dispensaries/wildflower-market",
+      "lat": 40.283668,
+      "lon": -74.092546,
+      "source": {
+        "type": "jane",
+        "slug": "wildflower-market",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/wildflower-market",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Timber 5",
+      "city": "Somerset",
+      "state": "NJ",
+      "postal_code": "08873",
+      "website": "https://www.iheartjane.com/dispensaries/timber-5",
+      "lat": 40.491563,
+      "lon": -74.473245,
+      "source": {
+        "type": "jane",
+        "slug": "timber-5",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/timber-5",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Township Green",
+      "city": "Riverside",
+      "state": "NJ",
+      "postal_code": "08075",
+      "website": "https://www.iheartjane.com/dispensaries/township-green",
+      "lat": 40.038164,
+      "lon": -74.958838,
+      "source": {
+        "type": "jane",
+        "slug": "township-green",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/township-green",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Tree House Co-Op Dispensary",
+      "city": "Voorhees Township",
+      "state": "NJ",
+      "postal_code": "08043",
+      "website": "https://www.iheartjane.com/dispensaries/tree-house-op",
+      "lat": 39.851548,
+      "lon": -74.920992,
+      "source": {
+        "type": "jane",
+        "slug": "tree-house-op",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/tree-house-op",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Treeotics",
+      "city": "Newark",
+      "state": "NJ",
+      "postal_code": "07112",
+      "website": "https://www.iheartjane.com/dispensaries/treeotics",
+      "lat": 40.715067,
+      "lon": -74.223703,
+      "source": {
+        "type": "jane",
+        "slug": "treeotics",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/treeotics",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Twisted Hat Cannabis",
+      "city": "Carneys Point",
+      "state": "NJ",
+      "postal_code": "08069",
+      "website": "https://www.iheartjane.com/dispensaries/twisted-hat",
+      "lat": 39.687448,
+      "lon": -75.487443,
+      "source": {
+        "type": "jane",
+        "slug": "twisted-hat",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/twisted-hat",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Uforia Dispensary",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07307",
+      "website": "https://www.iheartjane.com/dispensaries/uforia",
+      "lat": 40.7457,
+      "lon": -74.048723,
+      "source": {
+        "type": "jane",
+        "slug": "uforia",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/uforia",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Uma Flowers",
+      "city": "Morristown",
+      "state": "NJ",
+      "postal_code": "07960",
+      "website": "https://www.iheartjane.com/dispensaries/uma-flowers",
+      "lat": 40.800966,
+      "lon": -74.467182,
+      "source": {
+        "type": "jane",
+        "slug": "uma-flowers",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/uma-flowers",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Union Chill",
+      "city": "Lambertville",
+      "state": "NJ",
+      "postal_code": "08530",
+      "website": "https://www.iheartjane.com/dispensaries/union-chill",
+      "lat": 40.374058,
+      "lon": -74.947382,
+      "source": {
+        "type": "jane",
+        "slug": "union-chill",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/union-chill",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Unity Rd. Cannabis Shop",
+      "city": "Somerset",
+      "state": "NJ",
+      "postal_code": "08873",
+      "website": "https://www.iheartjane.com/dispensaries/unity-rd",
+      "lat": 40.529099,
+      "lon": -74.539467,
+      "source": {
+        "type": "jane",
+        "slug": "unity-rd",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/unity-rd",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Urge",
+      "city": "Elizabeth",
+      "state": "NJ",
+      "postal_code": "07201",
+      "website": "https://www.iheartjane.com/dispensaries/urge",
+      "lat": 40.660366,
+      "lon": -74.206456,
+      "source": {
+        "type": "jane",
+        "slug": "urge",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/urge",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Vigor Dispensary",
+      "city": "Matawan",
+      "state": "NJ",
+      "postal_code": "07747",
+      "website": "https://www.iheartjane.com/dispensaries/vigor",
+      "lat": 40.398847,
+      "lon": -74.228721,
+      "source": {
+        "type": "jane",
+        "slug": "vigor",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/vigor",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Village Hoboken",
+      "city": "Hoboken",
+      "state": "NJ",
+      "postal_code": "07030",
+      "website": "https://www.iheartjane.com/dispensaries/village-hoboken",
+      "lat": 40.742819,
+      "lon": -74.029584,
+      "source": {
+        "type": "jane",
+        "slug": "village-hoboken",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/village-hoboken",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Voltaire NJ",
+      "city": "Mt Holly",
+      "state": "NJ",
+      "postal_code": "08060",
+      "website": "https://www.iheartjane.com/dispensaries/voltaire-nj",
+      "lat": 39.993423,
+      "lon": -74.786125,
+      "source": {
+        "type": "jane",
+        "slug": "voltaire-nj",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/voltaire-nj",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "West Orange Wellness",
+      "city": "West Orange",
+      "state": "NJ",
+      "postal_code": "07052",
+      "website": "https://www.iheartjane.com/dispensaries/west-orange-wellness",
+      "lat": 40.765955,
+      "lon": -74.250895,
+      "source": {
+        "type": "jane",
+        "slug": "west-orange-wellness",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/west-orange-wellness",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Woodbury Wellness",
+      "city": "Woodbury",
+      "state": "NJ",
+      "postal_code": "08096",
+      "website": "https://www.iheartjane.com/dispensaries/woodbury-wellness",
+      "lat": 39.847949,
+      "lon": -75.144854,
+      "source": {
+        "type": "jane",
+        "slug": "woodbury-wellness",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/woodbury-wellness",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Xena NJ",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07305",
+      "website": "https://www.iheartjane.com/dispensaries/xena-nj",
+      "lat": 40.72595,
+      "lon": -74.067861,
+      "source": {
+        "type": "jane",
+        "slug": "xena-nj",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/xena-nj",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Zacate",
+      "city": "Delran",
+      "state": "NJ",
+      "postal_code": "08075",
+      "website": "https://www.iheartjane.com/dispensaries/zacate",
+      "lat": 40.014151,
+      "lon": -74.959221,
+      "source": {
+        "type": "jane",
+        "slug": "zacate",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/zacate",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Zen Leaf Mount Holly",
+      "city": "Mt Holly",
+      "state": "NJ",
+      "postal_code": "08060",
+      "website": "https://www.iheartjane.com/dispensaries/zen-leaf-mount-holly",
+      "lat": 40.007162,
+      "lon": -74.79821,
+      "source": {
+        "type": "jane",
+        "slug": "zen-leaf-mount-holly",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/zen-leaf-mount-holly",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Apothecarium Dispensary",
+      "city": "Phillipsburg",
+      "state": "NJ",
+      "postal_code": "08865",
+      "website": "https://www.iheartjane.com/dispensaries/apothecarium",
+      "lat": 40.690852,
+      "lon": -75.201763,
+      "source": {
+        "type": "jane",
+        "slug": "apothecarium",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/apothecarium",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Apothecarium Dispensary",
+      "city": "Maplewood",
+      "state": "NJ",
+      "postal_code": "07040",
+      "website": "https://www.iheartjane.com/dispensaries/apothecarium",
+      "lat": 40.720909,
+      "lon": -74.268156,
+      "source": {
+        "type": "jane",
+        "slug": "apothecarium",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/apothecarium",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Apothecarium Dispensary",
+      "city": "Lodi",
+      "state": "NJ",
+      "postal_code": "07644",
+      "website": "https://www.iheartjane.com/dispensaries/apothecarium",
+      "lat": 40.882838,
+      "lon": -74.067274,
+      "source": {
+        "type": "jane",
+        "slug": "apothecarium",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/apothecarium",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Ascend",
+      "city": "Wharton",
+      "state": "NJ",
+      "postal_code": "07885",
+      "website": "https://www.iheartjane.com/dispensaries/ascend",
+      "lat": 40.905497,
+      "lon": -74.568161,
+      "source": {
+        "type": "jane",
+        "slug": "ascend",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/ascend",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Ascend",
+      "city": "Fort Lee",
+      "state": "NJ",
+      "postal_code": "07024",
+      "website": "https://www.iheartjane.com/dispensaries/ascend",
+      "lat": 40.859731,
+      "lon": -73.972413,
+      "source": {
+        "type": "jane",
+        "slug": "ascend",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/ascend",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Ascend",
+      "city": "Rochelle Park",
+      "state": "NJ",
+      "postal_code": "07662",
+      "website": "https://www.iheartjane.com/dispensaries/ascend",
+      "lat": 40.903659,
+      "lon": -74.071038,
+      "source": {
+        "type": "jane",
+        "slug": "ascend",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/ascend",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Aunt Mary's Dispensary",
+      "city": "Flemington",
+      "state": "NJ",
+      "postal_code": "08822",
+      "website": "https://www.iheartjane.com/dispensaries/aunt-mary-s",
+      "lat": 40.498121,
+      "lon": -74.850898,
+      "source": {
+        "type": "jane",
+        "slug": "aunt-mary-s",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/aunt-mary-s",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Ayr Wellness",
+      "city": "Woodbridge",
+      "state": "NJ",
+      "postal_code": "07095",
+      "website": "https://www.iheartjane.com/dispensaries/ayr-wellness",
+      "lat": 40.567932,
+      "lon": -74.294909,
+      "source": {
+        "type": "jane",
+        "slug": "ayr-wellness",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/ayr-wellness",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Ayr Wellness",
+      "city": "Eatontown",
+      "state": "NJ",
+      "postal_code": "07724",
+      "website": "https://www.iheartjane.com/dispensaries/ayr-wellness",
+      "lat": 40.30203,
+      "lon": -74.05808,
+      "source": {
+        "type": "jane",
+        "slug": "ayr-wellness",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/ayr-wellness",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Ayr Wellness",
+      "city": "Union",
+      "state": "NJ",
+      "postal_code": "07083",
+      "website": "https://www.iheartjane.com/dispensaries/ayr-wellness",
+      "lat": 40.688853,
+      "lon": -74.301242,
+      "source": {
+        "type": "jane",
+        "slug": "ayr-wellness",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/ayr-wellness",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "BLOC",
+      "city": "Somerset",
+      "state": "NJ",
+      "postal_code": "08873",
+      "website": "https://www.iheartjane.com/dispensaries/bloc",
+      "lat": 40.516667,
+      "lon": -74.488137,
+      "source": {
+        "type": "jane",
+        "slug": "bloc",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/bloc",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "BLOC",
+      "city": "Waretown",
+      "state": "NJ",
+      "postal_code": "08758",
+      "website": "https://storemed-waretown.blocdispensary.com/stores/bloc-dispensary-waretown/specials",
+      "lat": 39.795855,
+      "lon": -74.199022,
+      "source": {
+        "type": "dutchie",
+        "slug": null,
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://storemed-waretown.blocdispensary.com/stores/bloc-dispensary-waretown/specials",
+          "origin": "https://storemed-waretown.blocdispensary.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "BLOC",
+      "city": "Ewing Township",
+      "state": "NJ",
+      "postal_code": "08638",
+      "website": "https://www.iheartjane.com/dispensaries/bloc",
+      "lat": 40.248043,
+      "lon": -74.770761,
+      "source": {
+        "type": "jane",
+        "slug": "bloc",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/bloc",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Breakwater",
+      "city": "East Windsor",
+      "state": "NJ",
+      "postal_code": "08512",
+      "website": "https://www.iheartjane.com/dispensaries/breakwater",
+      "lat": 40.334293,
+      "lon": -74.487241,
+      "source": {
+        "type": "jane",
+        "slug": "breakwater",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/breakwater",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Breakwater",
+      "city": "Roselle Park",
+      "state": "NJ",
+      "postal_code": "07204",
+      "website": "https://www.iheartjane.com/dispensaries/breakwater",
+      "lat": 40.661101,
+      "lon": -74.268673,
+      "source": {
+        "type": "jane",
+        "slug": "breakwater",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/breakwater",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Brute's Roots",
+      "city": "Egg Harbor Township",
+      "state": "NJ",
+      "postal_code": "08234",
+      "website": "https://www.iheartjane.com/dispensaries/brute-s-roots",
+      "lat": 39.430456,
+      "lon": -74.603516,
+      "source": {
+        "type": "jane",
+        "slug": "brute-s-roots",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/brute-s-roots",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Curaleaf",
+      "city": "Bordentown",
+      "state": "NJ",
+      "postal_code": "08505",
+      "website": "https://www.iheartjane.com/dispensaries/curaleaf",
+      "lat": 40.148762,
+      "lon": -74.700117,
+      "source": {
+        "type": "jane",
+        "slug": "curaleaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/curaleaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Curaleaf",
+      "city": "Edgewater Park",
+      "state": "NJ",
+      "postal_code": "08010",
+      "website": "https://www.iheartjane.com/dispensaries/curaleaf",
+      "lat": 40.041729,
+      "lon": -74.913396,
+      "source": {
+        "type": "jane",
+        "slug": "curaleaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/curaleaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Curaleaf",
+      "city": "Bellmawr",
+      "state": "NJ",
+      "postal_code": "08031",
+      "website": "https://www.iheartjane.com/dispensaries/curaleaf",
+      "lat": 39.865049,
+      "lon": -75.103094,
+      "source": {
+        "type": "jane",
+        "slug": "curaleaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/curaleaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Design 710",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/design-710",
+      "lat": 39.357844,
+      "lon": -74.432806,
+      "source": {
+        "type": "jane",
+        "slug": "design-710",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/design-710",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Downtown FLWR",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07302",
+      "website": "https://www.iheartjane.com/dispensaries/downtown-flwr",
+      "lat": 40.720193,
+      "lon": -74.044016,
+      "source": {
+        "type": "jane",
+        "slug": "downtown-flwr",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/downtown-flwr",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Eastern Green",
+      "city": "Voorhees Township",
+      "state": "NJ",
+      "postal_code": "08043",
+      "website": "https://www.iheartjane.com/dispensaries/eastern-green",
+      "lat": 39.822565,
+      "lon": -74.927731,
+      "source": {
+        "type": "jane",
+        "slug": "eastern-green",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/eastern-green",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Garfield Gardens Dispensary",
+      "city": "Garfield",
+      "state": "NJ",
+      "postal_code": "07026",
+      "website": "https://www.iheartjane.com/dispensaries/garfield-gardens",
+      "lat": 40.875741,
+      "lon": -74.115025,
+      "source": {
+        "type": "jane",
+        "slug": "garfield-gardens",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/garfield-gardens",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Holistic Solutions",
+      "city": "Atco",
+      "state": "NJ",
+      "postal_code": "08004",
+      "website": "https://www.iheartjane.com/dispensaries/holistic-solutions",
+      "lat": 39.764345,
+      "lon": -74.890869,
+      "source": {
+        "type": "jane",
+        "slug": "holistic-solutions",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/holistic-solutions",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "HoneyGrove",
+      "city": "Clementon",
+      "state": "NJ",
+      "postal_code": "08021",
+      "website": "https://www.iheartjane.com/dispensaries/honeygrove",
+      "lat": 39.803582,
+      "lon": -75.033198,
+      "source": {
+        "type": "jane",
+        "slug": "honeygrove",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/honeygrove",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Illicit Gardens Dispensary Secaucus",
+      "city": "Secaucus",
+      "state": "NJ",
+      "postal_code": "07094",
+      "website": "https://www.iheartjane.com/dispensaries/illicit-gardens-secaucus",
+      "lat": 40.797098,
+      "lon": -74.062936,
+      "source": {
+        "type": "jane",
+        "slug": "illicit-gardens-secaucus",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/illicit-gardens-secaucus",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Monmouth Wellness & Healing (Formerly NJ Leaf)",
+      "city": "Freehold",
+      "state": "NJ",
+      "postal_code": "07728",
+      "website": "https://www.iheartjane.com/dispensaries/monmouth-wellness-healing-formerly-nj-leaf",
+      "lat": 40.249726,
+      "lon": -74.272084,
+      "source": {
+        "type": "jane",
+        "slug": "monmouth-wellness-healing-formerly-nj-leaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/monmouth-wellness-healing-formerly-nj-leaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Monteverde NJ",
+      "city": "Red Bank",
+      "state": "NJ",
+      "postal_code": "07701",
+      "website": "https://www.iheartjane.com/dispensaries/monteverde-nj",
+      "lat": 40.352625,
+      "lon": -74.075189,
+      "source": {
+        "type": "jane",
+        "slug": "monteverde-nj",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/monteverde-nj",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "MPX NJ",
+      "city": "Atlantic City",
+      "state": "NJ",
+      "postal_code": "08401",
+      "website": "https://www.iheartjane.com/dispensaries/mpx-nj",
+      "lat": 39.359124,
+      "lon": -74.427464,
+      "source": {
+        "type": "jane",
+        "slug": "mpx-nj",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/mpx-nj",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "MPX NJ",
+      "city": "Pennsauken Township",
+      "state": "NJ",
+      "postal_code": "08109",
+      "website": "https://www.iheartjane.com/dispensaries/mpx-nj",
+      "lat": 39.929933,
+      "lon": -75.07237,
+      "source": {
+        "type": "jane",
+        "slug": "mpx-nj",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/mpx-nj",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "MPX NJ",
+      "city": "Sicklerville",
+      "state": "NJ",
+      "postal_code": "08081",
+      "website": "https://www.iheartjane.com/dispensaries/mpx-nj",
+      "lat": 39.830008,
+      "lon": -74.997083,
+      "source": {
+        "type": "jane",
+        "slug": "mpx-nj",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/mpx-nj",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "NJ Leaf North Brunswick (Formerly Garden State Botanicals)",
+      "city": "North Brunswick Township",
+      "state": "NJ",
+      "postal_code": "08902",
+      "website": "https://www.iheartjane.com/dispensaries/nj-leaf-north-brunswick-formerly-garden-state-botanicals",
+      "lat": 40.537321,
+      "lon": -74.342509,
+      "source": {
+        "type": "jane",
+        "slug": "nj-leaf-north-brunswick-formerly-garden-state-botanicals",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/nj-leaf-north-brunswick-formerly-garden-state-botanicals",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Restore NJ",
+      "city": "Glassboro",
+      "state": "NJ",
+      "postal_code": "08028",
+      "website": "https://www.iheartjane.com/dispensaries/restore-nj",
+      "lat": 39.719178,
+      "lon": -75.109843,
+      "source": {
+        "type": "jane",
+        "slug": "restore-nj",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/restore-nj",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "RIPT",
+      "city": "Jersey City",
+      "state": "NJ",
+      "postal_code": "07306",
+      "website": "https://www.iheartjane.com/dispensaries/ript",
+      "lat": 40.738166,
+      "lon": -74.077549,
+      "source": {
+        "type": "jane",
+        "slug": "ript",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/ript",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "RISE",
+      "city": "Paramus",
+      "state": "NJ",
+      "postal_code": "07652",
+      "website": "https://www.iheartjane.com/dispensaries/rise",
+      "lat": 40.917512,
+      "lon": -74.059437,
+      "source": {
+        "type": "jane",
+        "slug": "rise",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/rise",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "RISE",
+      "city": "Paterson",
+      "state": "NJ",
+      "postal_code": "07514",
+      "website": "https://www.iheartjane.com/dispensaries/rise",
+      "lat": 40.936481,
+      "lon": -74.143541,
+      "source": {
+        "type": "jane",
+        "slug": "rise",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/rise",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "RISE",
+      "city": "Bloomfield",
+      "state": "NJ",
+      "postal_code": "07003",
+      "website": "https://www.iheartjane.com/dispensaries/rise",
+      "lat": 40.775373,
+      "lon": -74.186893,
+      "source": {
+        "type": "jane",
+        "slug": "rise",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/rise",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Roots Dispensary",
+      "city": "Willingboro",
+      "state": "NJ",
+      "postal_code": "08046",
+      "website": "https://www.iheartjane.com/dispensaries/roots",
+      "lat": 40.055743,
+      "lon": -74.888213,
+      "source": {
+        "type": "jane",
+        "slug": "roots",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/roots",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Sanctuary Cannabis",
+      "city": "Scotch Plains",
+      "state": "NJ",
+      "postal_code": "07076",
+      "website": "https://www.iheartjane.com/dispensaries/sanctuary",
+      "lat": 40.665797,
+      "lon": -74.385615,
+      "source": {
+        "type": "jane",
+        "slug": "sanctuary",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/sanctuary",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "SilverLeaf Wellness",
+      "city": "Somerset",
+      "state": "NJ",
+      "postal_code": "08873",
+      "website": "https://www.iheartjane.com/dispensaries/silverleaf-wellness",
+      "lat": 40.461167,
+      "lon": -74.507571,
+      "source": {
+        "type": "jane",
+        "slug": "silverleaf-wellness",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/silverleaf-wellness",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Sweet Spot",
+      "city": "Voorhees Township",
+      "state": "NJ",
+      "postal_code": "08043",
+      "website": "https://www.iheartjane.com/dispensaries/sweet-spot",
+      "lat": 39.848882,
+      "lon": -74.988076,
+      "source": {
+        "type": "jane",
+        "slug": "sweet-spot",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/sweet-spot",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Botanist",
+      "city": "Williamstown",
+      "state": "NJ",
+      "postal_code": "08094",
+      "website": "https://www.iheartjane.com/dispensaries/botanist",
+      "lat": 39.719485,
+      "lon": -75.022002,
+      "source": {
+        "type": "jane",
+        "slug": "botanist",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/botanist",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Botanist",
+      "city": "Collingswood",
+      "state": "NJ",
+      "postal_code": "08108",
+      "website": "https://www.iheartjane.com/dispensaries/botanist",
+      "lat": 39.921812,
+      "lon": -75.087145,
+      "source": {
+        "type": "jane",
+        "slug": "botanist",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/botanist",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Botanist",
+      "city": "Egg Harbor Township",
+      "state": "NJ",
+      "postal_code": "08234",
+      "website": "https://www.iheartjane.com/dispensaries/botanist",
+      "lat": 39.419494,
+      "lon": -74.553976,
+      "source": {
+        "type": "jane",
+        "slug": "botanist",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/botanist",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Cannabist",
+      "city": "Mays Landing",
+      "state": "NJ",
+      "postal_code": "08330",
+      "website": "https://www.iheartjane.com/dispensaries/cannabist",
+      "lat": 39.452012,
+      "lon": -74.650009,
+      "source": {
+        "type": "jane",
+        "slug": "cannabist",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/cannabist",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Cannabist",
+      "city": "Vineland",
+      "state": "NJ",
+      "postal_code": "08360",
+      "website": "https://www.iheartjane.com/dispensaries/cannabist",
+      "lat": 39.502719,
+      "lon": -75.042321,
+      "source": {
+        "type": "jane",
+        "slug": "cannabist",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/cannabist",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Cannabist",
+      "city": "Deptford",
+      "state": "NJ",
+      "postal_code": "08096",
+      "website": "https://www.iheartjane.com/dispensaries/cannabist",
+      "lat": 39.833533,
+      "lon": -75.102355,
+      "source": {
+        "type": "jane",
+        "slug": "cannabist",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/cannabist",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "The Station",
+      "city": "Hoboken",
+      "state": "NJ",
+      "postal_code": "07030",
+      "website": "https://www.iheartjane.com/dispensaries/station",
+      "lat": 40.736333,
+      "lon": -74.029255,
+      "source": {
+        "type": "jane",
+        "slug": "station",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/station",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Theo A. Cannabis",
+      "city": "Franklin Park",
+      "state": "NJ",
+      "postal_code": "08823",
+      "website": "https://www.iheartjane.com/dispensaries/theo-a",
+      "lat": 40.441734,
+      "lon": -74.530924,
+      "source": {
+        "type": "jane",
+        "slug": "theo-a",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/theo-a",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Theory Wellness",
+      "city": "Trenton",
+      "state": "NJ",
+      "postal_code": "08638",
+      "website": "https://www.iheartjane.com/dispensaries/theory-wellness",
+      "lat": 40.23422,
+      "lon": -74.751026,
+      "source": {
+        "type": "jane",
+        "slug": "theory-wellness",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/theory-wellness",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Toke Lane Cannabis Dispensary",
+      "city": "Trenton",
+      "state": "NJ",
+      "postal_code": "08608",
+      "website": "https://www.iheartjane.com/dispensaries/toke-lane",
+      "lat": 40.216035,
+      "lon": -74.761812,
+      "source": {
+        "type": "jane",
+        "slug": "toke-lane",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/toke-lane",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "URBâ€™N Dispensary",
+      "city": "Newark",
+      "state": "NJ",
+      "postal_code": "07105",
+      "website": "https://www.iheartjane.com/dispensaries/urb-n",
+      "lat": 40.718753,
+      "lon": -74.161512,
+      "source": {
+        "type": "jane",
+        "slug": "urb-n",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/urb-n",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Valley Wellness",
+      "city": "Raritan",
+      "state": "NJ",
+      "postal_code": "08869",
+      "website": "https://www.iheartjane.com/dispensaries/valley-wellness",
+      "lat": 40.573984,
+      "lon": -74.6342,
+      "source": {
+        "type": "jane",
+        "slug": "valley-wellness",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/valley-wellness",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Zen Leaf",
+      "city": "Neptune Township",
+      "state": "NJ",
+      "postal_code": "",
+      "website": "https://www.iheartjane.com/dispensaries/zen-leaf",
+      "lat": 40.230248,
+      "lon": -74.060519,
+      "source": {
+        "type": "jane",
+        "slug": "zen-leaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/zen-leaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Zen Leaf",
+      "city": "Elizabeth",
+      "state": "NJ",
+      "postal_code": "07201",
+      "website": "https://www.iheartjane.com/dispensaries/zen-leaf",
+      "lat": 40.663541,
+      "lon": -74.205915,
+      "source": {
+        "type": "jane",
+        "slug": "zen-leaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/zen-leaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    },
+    {
+      "name": "Zen Leaf",
+      "city": "Lawrence Township",
+      "state": "NJ",
+      "postal_code": "08648",
+      "website": "https://www.iheartjane.com/dispensaries/zen-leaf",
+      "lat": 40.290303,
+      "lon": -74.686836,
+      "source": {
+        "type": "jane",
+        "slug": "zen-leaf",
+        "headers": {
+          "accept": "application/json, text/plain, */*",
+          "user-agent": "Mozilla/5.0 (GreenSaver)",
+          "referer": "https://www.iheartjane.com/dispensaries/zen-leaf",
+          "origin": "https://www.iheartjane.com"
+        },
+        "pageSize": 100,
+        "maxPages": 5
+      }
+    }
+  ]
+}
