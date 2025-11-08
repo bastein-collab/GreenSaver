@@ -22,17 +22,15 @@ jobs:
         run: |
           echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
           pwd
-          echo "Top-level:"
+          echo "Top-level files and folders:"
           ls -la
-          echo "Show .github/workflows:"
+          echo "Show .github/workflows (where your CSV appears):"
           ls -la .github/workflows || true
           echo "Show deals-finder (if present):"
           ls -la deals-finder || true
 
-      - name: Copy stores CSV into project (if present)
-        shell: bash
+      - name: Copy CSV from .github/workflows into project (if present)
         run: |
-          # If CSV exists in .github/workflows (as shown in your repo), copy it into the deals-finder working dir
           SRC=".github/workflows/stores.nj.csv"
           DST="deals-finder/ingest_input.csv"
           if [ -f "$SRC" ]; then
@@ -43,16 +41,53 @@ jobs:
             echo "No CSV at $SRC; continuing (workflow may use repo JSON instead)."
           fi
 
+      - name: Locate project directory (prefer deals-finder)
+        id: locate
+        run: |
+          # Prefer explicit deals-finder path if present (you stated package.json lives there)
+          if [ -f "deals-finder/package.json" ]; then
+            echo "project_dir=deals-finder" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # Otherwise search for the first package.json (limit depth to avoid long searches)
+          P=$(find . -maxdepth 6 -type f -name package.json -print -quit || true)
+          if [ -n "$P" ]; then
+            D=$(dirname "$P")
+            D=${D#./}
+            echo "project_dir=$D" >> $GITHUB_OUTPUT
+            echo "Found package.json at $P"
+          else
+            echo "project_dir=" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Fail early if no package.json found
+        if: ${{ steps.locate.outputs.project_dir == '' }}
+        run: |
+          echo "Error: package.json not found in repository (searched for deals-finder/package.json and up to depth 6)."
+          echo "Your Node project must be committed to the repo for Actions to run npm."
+          echo "If your project is in a subfolder, either:"
+          echo "  - Commit the folder (e.g. deals-finder) containing package.json to the repo,"
+          echo "  - Or update this workflow to set working-directory explicitly to the correct path."
+          exit 1
+
+      - name: Show resolved project directory
+        if: ${{ steps.locate.outputs.project_dir != '' }}
+        run: |
+          echo "Using project_dir='${{ steps.locate.outputs.project_dir }}'"
+          ls -la "${{ steps.locate.outputs.project_dir }}" || true
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       - name: Install deps
-        working-directory: deals-finder
+        if: ${{ steps.locate.outputs.project_dir != '' }}
+        working-directory: ${{ steps.locate.outputs.project_dir }}
         shell: bash
         run: |
-          # Prefer `npm ci` when a lockfile exists (reproducible); fall back to `npm install`.
+          # Prefer `npm ci` when lockfile exists (reproducible); fall back to `npm install`.
           if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
             echo "Found lockfile — running npm ci"
             npm ci
@@ -60,22 +95,23 @@ jobs:
             echo "No lockfile found — running npm install"
             npm install
           else
-            echo "Error: package.json not found in deals-finder"
+            echo "Error: package.json not found in ${PWD}"
             exit 1
           fi
 
       - name: Install Playwright (Chromium)
-        working-directory: deals-finder
+        if: ${{ steps.locate.outputs.project_dir != '' }}
+        working-directory: ${{ steps.locate.outputs.project_dir }}
         run: npx playwright install --with-deps chromium
 
       - name: Resolve store IDs
-        working-directory: deals-finder
+        if: ${{ steps.locate.outputs.project_dir != '' }}
+        working-directory: ${{ steps.locate.outputs.project_dir }}
         env:
           DEALS_STORES_ENDPOINT: ${{ vars.DEALS_STORES_ENDPOINT }}
-        shell: bash
         run: |
           # Prefer CSV copied into project (deals-finder/ingest_input.csv) if present,
-          # otherwise fall back to the repo-local JSON file used previously.
+          # otherwise fall back to scripts/ingest/stores.nj.json in the project dir.
           if [ -f ingest_input.csv ]; then
             echo "Using deals-finder/ingest_input.csv as input to resolve_store_ids_batch"
             node -r dotenv/config scripts/ingest/resolve_store_ids_batch.mjs ingest_input.csv > scripts/ingest/stores.nj.resolved.json
@@ -83,12 +119,13 @@ jobs:
             echo "Using scripts/ingest/stores.nj.json as input to resolve_store_ids_batch"
             node -r dotenv/config scripts/ingest/resolve_store_ids_batch.mjs scripts/ingest/stores.nj.json > scripts/ingest/stores.nj.resolved.json
           else
-            echo "Error: no input CSV or scripts/ingest/stores.nj.json found in deals-finder"
+            echo "Error: no input CSV or scripts/ingest/stores.nj.json found in project dir"
             exit 1
           fi
 
       - name: Ingest chunk (rolling)
-        working-directory: deals-finder
+        if: ${{ steps.locate.outputs.project_dir != '' }}
+        working-directory: ${{ steps.locate.outputs.project_dir }}
         shell: bash
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -106,7 +143,8 @@ jobs:
           node -r dotenv/config scripts/ingest/multi_store.mjs scripts/ingest/stores.nj.resolved.json --limit $CHUNK_SIZE --offset $OFFSET --concurrency 1
 
       - name: Upload ingest report
+        if: ${{ steps.locate.outputs.project_dir != '' }}
         uses: actions/upload-artifact@v4
         with:
           name: ingest-report-${{ github.run_id }}
-          path: deals-finder/ingest_report.json
+          path: ${{ steps.locate.outputs.project_dir }}/ingest_report.json
