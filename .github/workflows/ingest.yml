@@ -1,5 +1,4 @@
 name: Ingest NJ Stores
-
 on:
   workflow_dispatch:
   schedule:
@@ -11,9 +10,21 @@ jobs:
     permissions:
       contents: read
 
+    env:
+      # job-level env defaults (still allow step-level overrides)
+      INGEST_REPORT: ingest_report.json
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Repo layout (debug)
+        run: |
+          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
+          pwd
+          ls -la
+          echo "Top-level recursive listing (first 200 lines):"
+          ls -R | sed -n '1,200p'
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -22,26 +33,35 @@ jobs:
 
       - name: Install deps
         shell: bash
+        working-directory: GreenSaver
         run: |
-          # Use `npm ci` when a lockfile exists (reproducible); fall back to `npm install`
+          # Prefer `npm ci` when a lockfile exists (reproducible); fall back to `npm install`.
+          # Fail with a clear message if package.json is missing in the working directory.
           if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
             echo "Found lockfile — running npm ci"
             npm ci
-          else
+          elif [ -f package.json ]; then
             echo "No lockfile found — running npm install"
             npm install
+          else
+            echo "Error: package.json not found in working directory: $(pwd)"
+            echo "Make sure you set `working-directory` to the folder that contains package.json"
+            exit 1
           fi
 
       - name: Install Playwright (Chromium)
+        working-directory: GreenSaver
         run: npx playwright install --with-deps chromium
 
       - name: Resolve store IDs
+        working-directory: GreenSaver
         run: node -r dotenv/config scripts/ingest/resolve_store_ids_batch.mjs scripts/ingest/stores.nj.json > scripts/ingest/stores.nj.resolved.json
         env:
           DEALS_STORES_ENDPOINT: ${{ vars.DEALS_STORES_ENDPOINT }}
 
       - name: Ingest chunk (rolling)
         shell: bash
+        working-directory: GreenSaver
         run: |
           CHUNK_SIZE=${CHUNK_SIZE:-25}
           TOTAL=${TOTAL_STORES:-275}
@@ -61,4 +81,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ingest-report-${{ github.run_id }}
-          path: ingest_report.json
+          path: GreenSaver/ingest_report.json
