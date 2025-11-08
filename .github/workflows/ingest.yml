@@ -11,20 +11,45 @@ jobs:
       contents: read
 
     env:
-      # job-level env defaults (still allow step-level overrides)
       INGEST_REPORT: ingest_report.json
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Repo layout (debug)
+      - name: Locate project (find package.json)
+        id: locate
         run: |
-          echo "GITHUB_WORKSPACE=$GITHUB_WORKSPACE"
-          pwd
-          ls -la
-          echo "Top-level recursive listing (first 200 lines):"
-          ls -R | sed -n '1,200p'
+          # If package.json is at repo root, set project_dir=.
+          if [ -f package.json ]; then
+            echo "project_dir=." >> $GITHUB_OUTPUT
+          else
+            # Otherwise search up to 3 levels deep for the first package.json
+            P=$(find . -maxdepth 3 -type f -name package.json -print -quit || true)
+            if [ -n "$P" ]; then
+              D=$(dirname "$P")
+              # remove leading ./ if present
+              D=${D#./}
+              echo "project_dir=$D" >> $GITHUB_OUTPUT
+            else
+              # no package.json found — record empty output so we can fail with a clear message
+              echo "project_dir=" >> $GITHUB_OUTPUT
+            fi
+          fi
+
+      - name: Fail early if no package.json found
+        if: ${{ steps.locate.outputs.project_dir == '' }}
+        run: |
+          echo "Error: package.json not found in repository (searched up to depth 3)."
+          echo "If your project is in a deeper subfolder, update the workflow or add package.json at repo root."
+          exit 1
+
+      - name: Show project directory (debug)
+        if: ${{ steps.locate.outputs.project_dir != '' }}
+        run: |
+          echo "Resolved project_dir='${{ steps.locate.outputs.project_dir }}'"
+          echo "Listing files in project dir:"
+          ls -la "${{ steps.locate.outputs.project_dir }}"
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -32,53 +57,28 @@ jobs:
           node-version: '20'
 
       - name: Install deps
+        if: ${{ steps.locate.outputs.project_dir != '' }}
         shell: bash
-        working-directory: GreenSaver
+        working-directory: ${{ steps.locate.outputs.project_dir }}
         run: |
-          # Prefer `npm ci` when a lockfile exists (reproducible); fall back to `npm install`.
-          # Fail with a clear message if package.json is missing in the working directory.
+          # Use `npm ci` when lockfile exists (reproducible); fallback to `npm install`.
           if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
             echo "Found lockfile — running npm ci"
             npm ci
-          elif [ -f package.json ]; then
+          else
             echo "No lockfile found — running npm install"
             npm install
-          else
-            echo "Error: package.json not found in working directory: $(pwd)"
-            echo "Make sure you set `working-directory` to the folder that contains package.json"
-            exit 1
           fi
 
       - name: Install Playwright (Chromium)
-        working-directory: GreenSaver
+        if: ${{ steps.locate.outputs.project_dir != '' }}
+        working-directory: ${{ steps.locate.outputs.project_dir }}
         run: npx playwright install --with-deps chromium
 
       - name: Resolve store IDs
-        working-directory: GreenSaver
+        if: ${{ steps.locate.outputs.project_dir != '' }}
+        working-directory: ${{ steps.locate.outputs.project_dir }}
         run: node -r dotenv/config scripts/ingest/resolve_store_ids_batch.mjs scripts/ingest/stores.nj.json > scripts/ingest/stores.nj.resolved.json
         env:
-          DEALS_STORES_ENDPOINT: ${{ vars.DEALS_STORES_ENDPOINT }}
-
-      - name: Ingest chunk (rolling)
-        shell: bash
-        working-directory: GreenSaver
-        run: |
-          CHUNK_SIZE=${CHUNK_SIZE:-25}
-          TOTAL=${TOTAL_STORES:-275}
-          IDX=$(( ( ( $(date +%s) / 60 ) / 15 ) % ( (TOTAL + CHUNK_SIZE - 1) / CHUNK_SIZE ) ))
-          OFFSET=$(( IDX * CHUNK_SIZE ))
-          echo "Processing chunk index=$IDX offset=$OFFSET size=$CHUNK_SIZE of total=$TOTAL"
-          node -r dotenv/config scripts/ingest/multi_store.mjs scripts/ingest/stores.nj.resolved.json --limit $CHUNK_SIZE --offset $OFFSET --concurrency 1
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
-          DEALS_HEADERS_JSON: ${{ secrets.DEALS_HEADERS_JSON }}
-          CHUNK_SIZE: ${{ vars.CHUNK_SIZE }}
-          TOTAL_STORES: ${{ vars.TOTAL_STORES }}
-          INGEST_REPORT: ingest_report.json
-
-      - name: Upload ingest report
-        uses: actions/upload-artifact@v4
-        with:
-          name: ingest-report-${{ github.run_id }}
-          path: GreenSaver/ingest_report.json
+          DEALS_STORES_ENDPOINT: ${{](#)*
+
