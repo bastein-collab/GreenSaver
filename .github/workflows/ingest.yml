@@ -1,9 +1,8 @@
 name: Ingest NJ Stores
-
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/15 * * * *' # every 15 minutes (chunked)
+    - cron: '*/15 * * * *' # every 15 minutes
 
 jobs:
   ingest:
@@ -29,17 +28,57 @@ jobs:
           echo "deals-finder contents (if present):"
           ls -la deals-finder || true
 
-      - name: Copy stores.nj.json from workflows folder into project
+      - name: Locate project directory (check .github/workflows first, then deals-finder, then search)
+        id: locate
         run: |
-          SRC=".github/workflows/stores.nj.json"
-          DST="deals-finder/scripts/ingest/stores.nj.json"
-          if [ -f "$SRC" ]; then
-            echo "Copying $SRC -> $DST"
-            mkdir -p "$(dirname "$DST")"
-            cp "$SRC" "$DST"
-            echo "Copied OK"
+          # Prefer package.json inside .github/workflows if you intentionally put the Node project there
+          if [ -f ".github/workflows/package.json" ]; then
+            echo "project_dir=.github/workflows" >> $GITHUB_OUTPUT
+            echo "Found package.json at .github/workflows/package.json"
+            exit 0
+          fi
+
+          # Next preference: deals-finder
+          if [ -f "deals-finder/package.json" ]; then
+            echo "project_dir=deals-finder" >> $GITHUB_OUTPUT
+            echo "Found package.json at deals-finder/package.json"
+            exit 0
+          fi
+
+          # Fallback: search the repo (limit depth to avoid long searches)
+          P=$(find . -maxdepth 6 -type f -name package.json -print -quit || true)
+          if [ -n "$P" ]; then
+            D=$(dirname "$P")
+            D=${D#./}
+            echo "project_dir=$D" >> $GITHUB_OUTPUT
+            echo "Found package.json at $P"
           else
-            echo "No $SRC found — if your resolve script uses a different input, it will run against repository-local files."
+            echo "project_dir=" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Fail early if no package.json found
+        if: ${{ steps.locate.outputs.project_dir == '' }}
+        run: |
+          echo "Error: package.json not found in repository (checked .github/workflows, deals-finder, and searched up to depth 6)."
+          echo "Place your Node project's package.json in the repo (recommended: project root or deals-finder/), or update this workflow to the correct path."
+          exit 1
+
+      - name: Copy stores file into project (if it lives in .github/workflows)
+        if: ${{ steps.locate.outputs.project_dir != '' }}
+        run: |
+          # If you placed stores.nj.json (or CSV) in .github/workflows, copy it into the discovered project dir.
+          SRC_JSON=".github/workflows/stores.nj.json"
+          SRC_CSV=".github/workflows/stores.nj.csv"
+          DST_DIR="${{ steps.locate.outputs.project_dir }}/scripts/ingest"
+          mkdir -p "$DST_DIR"
+          if [ -f "$SRC_JSON" ]; then
+            cp "$SRC_JSON" "$DST_DIR/stores.nj.json"
+            echo "Copied $SRC_JSON -> $DST_DIR/stores.nj.json"
+          elif [ -f "$SRC_CSV" ]; then
+            cp "$SRC_CSV" "$DST_DIR/stores.nj.csv"
+            echo "Copied $SRC_CSV -> $DST_DIR/stores.nj.csv"
+          else
+            echo "No stores file found under .github/workflows — skipping copy."
           fi
 
       - name: Setup Node
@@ -48,10 +87,11 @@ jobs:
           node-version: '20'
 
       - name: Install deps
-        working-directory: deals-finder
+        if: ${{ steps.locate.outputs.project_dir != '' }}
+        working-directory: ${{ steps.locate.outputs.project_dir }}
         shell: bash
         run: |
-          # Prefer reproducible installs when lockfile exists; otherwise fall back to npm install.
+          # Prefer `npm ci` when lockfile exists (reproducible); fall back to `npm install`.
           if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
             echo "Found lockfile — running npm ci"
             npm ci
@@ -59,37 +99,40 @@ jobs:
             echo "No lockfile found — running npm install"
             npm install
           else
-            echo "Error: package.json not found in deals-finder (expected deals-finder/package.json)"
+            echo "Error: package.json not found in ${PWD}"
             exit 1
           fi
 
       - name: Install Playwright (Chromium)
-        working-directory: deals-finder
+        if: ${{ steps.locate.outputs.project_dir != '' }}
+        working-directory: ${{ steps.locate.outputs.project_dir }}
         run: npx playwright install --with-deps chromium
 
       - name: Resolve store IDs
-        working-directory: deals-finder
+        if: ${{ steps.locate.outputs.project_dir != '' }}
+        working-directory: ${{ steps.locate.outputs.project_dir }}
         env:
           DEALS_STORES_ENDPOINT: ${{ vars.DEALS_STORES_ENDPOINT }}
         shell: bash
         run: |
-          # If we copied .github/workflows/stores.nj.json into the project, use it.
+          # Use the copied JSON/CSV in scripts/ingest if present, otherwise use whatever the project already contains.
           if [ -f scripts/ingest/stores.nj.json ]; then
-            echo "Using scripts/ingest/stores.nj.json (copied from .github/workflows)"
+            echo "Using scripts/ingest/stores.nj.json"
             node -r dotenv/config scripts/ingest/resolve_store_ids_batch.mjs scripts/ingest/stores.nj.json > scripts/ingest/stores.nj.resolved.json
-          elif [ -f scripts/ingest/stores.nj.json.orig ]; then
-            echo "Using scripts/ingest/stores.nj.json.orig"
-            node -r dotenv/config scripts/ingest/resolve_store_ids_batch.mjs scripts/ingest/stores.nj.json.orig > scripts/ingest/stores.nj.resolved.json
           elif [ -f scripts/ingest/stores.nj.csv ]; then
             echo "Using scripts/ingest/stores.nj.csv"
             node -r dotenv/config scripts/ingest/resolve_store_ids_batch.mjs scripts/ingest/stores.nj.csv > scripts/ingest/stores.nj.resolved.json
+          elif [ -f scripts/ingest/stores.nj.orig ]; then
+            echo "Using scripts/ingest/stores.nj.orig"
+            node -r dotenv/config scripts/ingest/resolve_store_ids_batch.mjs scripts/ingest/stores.nj.orig > scripts/ingest/stores.nj.resolved.json
           else
-            echo "No input stores file found in deals-finder/scripts/ingest; please ensure the file is present or adjust workflow."
+            echo "Error: no input stores file found in project scripts/ingest"
             exit 1
           fi
 
       - name: Ingest chunk (rolling)
-        working-directory: deals-finder
+        if: ${{ steps.locate.outputs.project_dir != '' }}
+        working-directory: ${{ steps.locate.outputs.project_dir }}
         shell: bash
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -107,7 +150,8 @@ jobs:
           node -r dotenv/config scripts/ingest/multi_store.mjs scripts/ingest/stores.nj.resolved.json --limit $CHUNK_SIZE --offset $OFFSET --concurrency 1
 
       - name: Upload ingest report
+        if: ${{ steps.locate.outputs.project_dir != '' }}
         uses: actions/upload-artifact@v4
         with:
           name: ingest-report-${{ github.run_id }}
-          path: deals-finder/ingest_report.json
+          path: ${{ steps.locate.outputs.project_dir }}/ingest_report.json
