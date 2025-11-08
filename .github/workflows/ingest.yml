@@ -21,7 +21,16 @@ jobs:
           node-version: '20'
 
       - name: Install deps
-        run: npm ci
+        shell: bash
+        run: |
+          # Use `npm ci` when a lockfile exists (reproducible); fall back to `npm install`
+          if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
+            echo "Found lockfile — running npm ci"
+            npm ci
+          else
+            echo "No lockfile found — running npm install"
+            npm install
+          fi
 
       - name: Install Playwright (Chromium)
         run: npx playwright install --with-deps chromium
@@ -32,6 +41,7 @@ jobs:
           DEALS_STORES_ENDPOINT: ${{ vars.DEALS_STORES_ENDPOINT }}
 
       - name: Ingest chunk (rolling)
+        shell: bash
         run: |
           CHUNK_SIZE=${CHUNK_SIZE:-25}
           TOTAL=${TOTAL_STORES:-275}
