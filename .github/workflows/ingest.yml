@@ -1,5 +1,3 @@
-Copilot said: ```name=.github/workflows/ingest.yml name: Ingest NJ Stores on: workflow_dispatch:
-name=.github/workflows/ingest.yml
 name: Ingest NJ Stores
 
 on:
