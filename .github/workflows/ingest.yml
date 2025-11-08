@@ -1,3 +1,5 @@
+Copilot said: ```name=.github/workflows/ingest.yml name: Ingest NJ Stores on: workflow_dispatch:
+name=.github/workflows/ingest.yml
 name: Ingest NJ Stores
 
 on:
@@ -23,10 +25,31 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Locate CSV in GreenSaver/.github/workflows
+        id: locate_csv
+        run: |
+          # look specifically for a CSV under GreenSaver/.github/workflows
+          CSV=$(find "$GITHUB_WORKSPACE/GreenSaver/.github/workflows" -maxdepth 1 -type f -name '*.csv' -print -quit || true)
+          if [ -z "$CSV" ]; then
+            echo "No CSV found at $GITHUB_WORKSPACE/GreenSaver/.github/workflows"
+            echo "CSV_PATH=" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          echo "Found CSV: $CSV"
+          echo "CSV_PATH=$CSV" >> $GITHUB_OUTPUT
+
+      - name: Copy CSV into deals-finder (so project steps can access it)
+        if: ${{ steps.locate_csv.outputs.CSV_PATH != '' }}
+        run: |
+          mkdir -p deals-finder
+          cp "${{ steps.locate_csv.outputs.CSV_PATH }}" deals-finder/ingest_input.csv
+          echo "Copied CSV to deals-finder/ingest_input.csv"
+
       - name: Install deps
         working-directory: deals-finder
+        shell: bash
         run: |
-          # Prefer reproducible installs when lockfile exists, otherwise fall back to npm install.
+          # Prefer reproducible installs when a lockfile exists; otherwise fall back to npm install.
           if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
             echo "Found lockfile — running npm ci"
             npm ci
@@ -46,7 +69,16 @@ jobs:
         working-directory: deals-finder
         env:
           DEALS_STORES_ENDPOINT: ${{ vars.DEALS_STORES_ENDPOINT }}
-        run: node -r dotenv/config scripts/ingest/resolve_store_ids_batch.mjs scripts/ingest/stores.nj.json > scripts/ingest/stores.nj.resolved.json
+        run: |
+          # If your resolve script expects a CSV path, it can read deals-finder/ingest_input.csv
+          # Otherwise it will use the repository-local JSON path as before.
+          if [ -f ingest_input.csv ]; then
+            echo "Running resolve_store_ids_batch using deals-finder/ingest_input.csv"
+            node -r dotenv/config scripts/ingest/resolve_store_ids_batch.mjs ingest_input.csv > scripts/ingest/stores.nj.resolved.json
+          else
+            echo "Running resolve_store_ids_batch using scripts/ingest/stores.nj.json"
+            node -r dotenv/config scripts/ingest/resolve_store_ids_batch.mjs scripts/ingest/stores.nj.json > scripts/ingest/stores.nj.resolved.json
+          fi
 
       - name: Ingest chunk (rolling)
         working-directory: deals-finder
