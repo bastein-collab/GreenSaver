@@ -5,7 +5,7 @@ on:
   schedule:
     - cron: '*/15 * * * *' # every 15 minutes (chunked)
 
-# Ensure only one run is active; new scheduled runs will wait for the current one to finish
+# Ensure only one run is active at a time
 concurrency:
   group: ingest-nj-stores
   cancel-in-progress: false
@@ -35,7 +35,6 @@ jobs:
           elif [ -f "./deals-finder/package.json" ]; then
             PKG_PATH="deals-finder"
           else
-            # Search up to a reasonable depth to avoid scanning node_modules
             FOUND="$(find . -maxdepth 6 -type f -name package.json -not -path "*/node_modules/*" -print -quit || true)"
             if [ -n "${FOUND:-}" ]; then
               PKG_PATH="${FOUND%/package.json}"
@@ -69,7 +68,6 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          # Cache lockfile relative to selected package path
           cache-dependency-path: ${{ steps.find_pkg.outputs.pkg_path }}/package-lock.json
 
       - name: Install deps
@@ -81,7 +79,6 @@ jobs:
           node --version
           npm --version
           if [ -f package-lock.json ]; then
-            # Avoid running lifecycle scripts in CI which can be flaky (e.g., husky)
             npm ci --ignore-scripts
           else
             echo "No package-lock.json found; falling back to npm install."
@@ -147,17 +144,17 @@ jobs:
         shell: bash
         run: |
           set -Eeuo pipefail
-          # Basic secrets presence check (warn if missing; scripts may still handle defaults)
+          # Warn if key secrets are missing
           for k in SUPABASE_URL SUPABASE_SERVICE_ROLE DEALS_HEADERS_JSON; do
             if [ -z "${!k:-}" ]; then
               echo "Warning: $k is not set." >&2
             fi
           done
 
-          # Ensure report file exists so artifact upload doesn't fail
+          # Ensure report file exists for artifact upload
           : > "${INGEST_REPORT}"
 
-          # Coerce and validate inputs
+          # Validate and coerce inputs
           CHUNK="${CHUNK_SIZE:-25}"
           TOTAL="${TOTAL_STORES:-275}"
           if ! [[ "$CHUNK" =~ ^[0-9]+$ ]] || [ "$CHUNK" -le 0 ]; then
