@@ -20,6 +20,7 @@ type Props =
       maxOff: number;
       avgPrice: number;
       rows?: undefined;
+      onViewAll?: () => void;
     }
   | {
       // Future-ready: list layout with green dividers
@@ -28,6 +29,7 @@ type Props =
       deals?: undefined;
       maxOff?: undefined;
       avgPrice?: undefined;
+      onViewAll?: () => void;
     };
 
 export default function TopDispensariesCard(props: Props) {
@@ -62,7 +64,7 @@ export default function TopDispensariesCard(props: Props) {
 
           <Pressable
             accessibilityRole="button"
-            onPress={() => router.push("/deals")}
+            onPress={() => (props as any).onViewAll ? (props as any).onViewAll() : router.push("/deals")}
             hitSlop={8}
             style={{ marginTop: 12 }}
           >
@@ -80,7 +82,7 @@ export default function TopDispensariesCard(props: Props) {
           </Text>
           <Pressable
             accessibilityRole="button"
-            onPress={() => router.push("/deals")}
+            onPress={() => (props as any).onViewAll ? (props as any).onViewAll() : router.push("/deals")}
             hitSlop={8}
           >
             <Text style={styles.cta}>View all deals ></Text>
@@ -141,4 +143,3 @@ const styles = StyleSheet.create({
     fontWeight: "900",
   },
 });
-

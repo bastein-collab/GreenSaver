@@ -76,12 +76,21 @@ $$;
 create or replace function public.get_store_summaries_near_zip(
   p_zip text,
   p_radius_km double precision default 25
-) returns setof public.get_store_summaries_near language sql stable as $$
-  select *
-  from public.get_store_summaries_near(z.lat, z.lon, p_radius_km)
+) returns table (
+  dispensary_id uuid,
+  dispensary_name text,
+  city text,
+  distance_km double precision,
+  deals_count integer,
+  max_off numeric,
+  avg_price numeric,
+  median_price numeric,
+  last_scraped timestamptz
+) language sql stable as $$
+  select s.*
   from public.us_zip_centroids z
+  join lateral public.get_store_summaries_near(z.lat, z.lon, p_radius_km) as s on true
   where z.zip = p_zip;
 $$;
 
 commit;
-

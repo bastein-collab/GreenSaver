@@ -139,5 +139,6 @@ revoke all on all sequences in schema public from public;
 revoke all on all functions in schema public from public;
 
 grant select on all tables in schema public to anon, authenticated;
+grant execute on all functions in schema public to anon, authenticated;
 
 commit;

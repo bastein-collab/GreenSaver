@@ -11,10 +11,12 @@ select
   d.name as dispensary_name,
   coalesce(de.percent_off, 0) as percent_off,
   de.price_cents,
-  de.postal_code
+  de.postal_code,
+  de.product_type,
+  de.category,
+  de.subcategory
 from public.deals de
 left join public.brands b on b.id = de.brand_id
 left join public.dispensaries d on d.id = de.dispensary_id;
 
 commit;
-

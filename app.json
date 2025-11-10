@@ -5,10 +5,29 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/greensaver_logo.png",
+    "scheme": "greensaver",
     "splash": {
       "image": "./assets/images/greensaver_logo.png",
       "backgroundColor": "#0b572c",
       "resizeMode": "contain"
+    },
+    "ios": {
+      "bundleIdentifier": "com.greenfinder.app"
+    },
+    "android": {
+      "package": "com.greenfinder.app",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [ { "scheme": "greensaver" } ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      }
     },
     "androidStatusBar": {
       "backgroundColor": "#145A32",

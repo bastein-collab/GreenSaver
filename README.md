@@ -79,6 +79,14 @@ The UI is locked. To power it with live data:
 
 Once the SQL and ingestion are in place, the app shows live data with safe fallbacks when envs are missing.
 
+### Deep linking (scheme)
+
+- The app is configured with scheme `greenfinder` in `app.json`. This avoids Expo Router warnings and enables deep links like `greenfinder://deals?r=25`.
+- Test locally:
+  - iOS: `npx uri-scheme open greenfinder://deals --ios`
+  - Android: `npx uri-scheme open greenfinder://deals --android`
+- Links opened inside the app will route through `expo-router`.
+
 ### SQL to run in Supabase (order)
 
 1. `db/schema_example.sql` – base tables + core views
@@ -90,6 +98,41 @@ Once the SQL and ingestion are in place, the app shows live data with safe fallb
 Tip: Use the Supabase SQL Editor. All scripts are idempotent and safe to re-run.
 
 ### VS Code + Supabase workflow
+
+## Live data ingest (fast path)
+
+1) Set server envs in `.env` (do NOT ship these in the client):
+
+SUPABASE_URL=https://YOUR-PROJECT.supabase.co
+SUPABASE_SERVICE_ROLE=YOUR_SERVICE_ROLE
+TARGET_STORE_NAME=The Social Leaf
+TARGET_STORE_CITY=Toms River, NJ
+TARGET_STORE_ZIP=08757
+TARGET_STORE_URL=https://shop.thesocialleaf.com/toms-river/menu/discounts
+DEALS_JSON_URL=https://shop.thesocialleaf.com/_api/Products/GetProductList  # or any JSON endpoint you captured
+
+2) Run a single-store ingest
+
+node -r dotenv/config scripts/ingest/social_leaf.mjs
+
+This script:
+- Fetches a store JSON endpoint,
+- Normalizes fields (name/brand/price/discount & optional types),
+- Upserts into `public.deals` using the service role key.
+
+3) Verify data shows in the app
+
+- SQL checks:
+  - `select * from public.deals_view limit 5;`
+  - `select * from public.top_brands_today limit 5;`
+  - `select * from public.v_deals_by_store limit 5;`
+- Run the app: `npx expo start -c` and test Savers/Deals with ZIP/GPS + radius/types.
+
+4) Schedule (optional)
+
+- Use GitHub Actions cron to run the ingest every 2–3 hours:
+  - Save the same `.env` keys as GitHub Secrets.
+  - Command: `node -r dotenv/config scripts/ingest/social_leaf.mjs`
 
 - Edit TypeScript/UI in VS Code as usual. The UI is frozen; only data wiring should change.
 - Apply SQL by pasting the files above into the Supabase SQL Editor (or check them into a migration system if you prefer). No additional tooling required.

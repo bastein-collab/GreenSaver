@@ -1,0 +1,14 @@
+{
+  "stores": [
+    {
+      "state": "NJ",
+      "city": "Waretown",
+      "website": "https://storemed-waretown.blocdispensary.com/stores/bloc-dispensary-waretown/specials",
+      "postal_code": "08758",
+      "name": "BLOC",
+      "source": {
+        "type": "dutchie"
+      }
+    }
+  ]
+}

@@ -52,8 +52,8 @@ const styles = StyleSheet.create({
     // place title clearly below the logo bottom regardless of status height
     marginTop: LOGO_H + 8,
     color: COLORS.ink,
-    fontSize: 34,
-    lineHeight: 40,
+    fontSize: 30,
+    lineHeight: 36,
     fontWeight: "900",
     flexShrink: 1,
   },

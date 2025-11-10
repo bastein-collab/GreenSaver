@@ -1,0 +1,57 @@
+-- db/deals_geo.sql
+-- RPCs to fetch deals near a point or ZIP, respecting a radius.
+
+begin;
+
+-- Deals near a latitude/longitude
+create or replace function public.get_deals_near(
+  p_lat double precision,
+  p_lon double precision,
+  p_radius_km double precision,
+  p_limit integer default 100
+)
+returns table (
+  id uuid,
+  product_name text,
+  brand_name text,
+  dispensary_name text,
+  percent_off numeric,
+  price_cents integer,
+  postal_code text
+) language sql stable as $$
+  with near as (
+    select d.id
+    from public.dispensaries d
+    where d.lat is not null and d.lon is not null
+      and public.haversine_km(p_lat, p_lon, d.lat, d.lon) <= p_radius_km
+  )
+  select de.id,
+         de.product_name,
+         b.name as brand_name,
+         s.name as dispensary_name,
+         coalesce(de.percent_off, 0) as percent_off,
+         de.price_cents,
+         s.postal_code
+  from public.deals de
+  join near n on n.id = de.dispensary_id
+  left join public.brands b on b.id = de.brand_id
+  left join public.dispensaries s on s.id = de.dispensary_id
+  order by coalesce(de.percent_off,0) desc nulls last, de.price_cents asc nulls last
+  limit greatest(p_limit, 1);
+$$;
+
+-- Deals near a ZIP
+create or replace function public.get_deals_near_zip(
+  p_zip text,
+  p_radius_km double precision,
+  p_limit integer default 100
+) returns setof public.get_deals_near language sql stable as $$
+  select *
+  from public.get_deals_near(z.lat, z.lon, p_radius_km, p_limit)
+  from public.us_zip_centroids z
+  where z.zip = p_zip;
+$$;
+
+commit;
+
+

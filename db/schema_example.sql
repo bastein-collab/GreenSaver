@@ -15,6 +15,10 @@ create table if not exists public.dispensaries (
   lon double precision
 );
 
+-- Align schema with ingest/helpers and app usage
+alter table if exists public.dispensaries
+  add column if not exists website text;
+
 create table if not exists public.brands (
   id uuid primary key default gen_random_uuid(),
   name text unique not null
@@ -30,6 +34,17 @@ create table if not exists public.deals (
   scraped_at timestamptz default now(),
   postal_code text
 );
+
+-- Extra columns used by filters and UI (safe if rerun)
+alter table if exists public.deals
+  add column if not exists product_type text,
+  add column if not exists category text,
+  add column if not exists subcategory text;
+
+-- Helpful indexes for faster filtering
+create index if not exists deals_percent_off_idx on public.deals (percent_off);
+create index if not exists deals_price_cents_idx on public.deals (price_cents);
+create index if not exists deals_postal_code_idx on public.deals (postal_code);
 
 -- Views --------------------------------------------------------------------
 -- Daily store summary used by the Savers header card
@@ -59,4 +74,3 @@ group by 1,2
 order by max_off desc nulls last;
 
 commit;
-
