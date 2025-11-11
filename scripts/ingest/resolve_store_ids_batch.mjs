@@ -123,6 +123,32 @@ async function resolveOne(store) {
 
   if (!origin) return { ...store, store_id: store.store_id || null, _error: 'no-origin' };
 
+  // 0) Jane shortcut: upgrade dispensaries/<slug> to stores/<id>/<slug>/menu via GraphQL
+  try {
+    if (/iheartjane\.com\/dispensaries\//i.test(store.website)) {
+      const m = store.website.match(/dispensaries\/([^\/?#]+)/i);
+      const jSlug = (m && m[1]) || slug || '';
+      if (jSlug) {
+        const graphUrl = process.env.JANE_GRAPHQL_URL || 'https://apigw.iheartjane.com/graphql';
+        const q = { query: "query StoreBySlug($slug:String!){ store(slug:$slug){ id slug } }", variables: { slug: jSlug } };
+        const r = await fetch(graphUrl, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(q) });
+        if (r.ok) {
+          const j = await r.json();
+          const id = j?.data?.store?.id || null;
+          const sslug = j?.data?.store?.slug || jSlug;
+          if (id) {
+            const upgraded = `https://www.iheartjane.com/stores/${id}/${sslug}/menu`;
+            return { ...store, website: upgraded, source: { ...(store.source || {}), type: 'jane', slug: sslug } };
+          }
+        }
+      }
+    }
+    // Ensure Jane store URLs include /menu
+    if (/iheartjane\.com\/stores\//i.test(store.website) && !/\/menu(\/|$)/i.test(store.website)) {
+      return { ...store, website: store.website.replace(/\/$/, '') + '/menu' };
+    }
+  } catch {}
+
   // 1) Use API
   const fromApi = await tryStoresApi(origin, endpoints, defaultHeaders, slug, store.postal_code, store.city);
   if (fromApi) return { ...store, store_id: fromApi };

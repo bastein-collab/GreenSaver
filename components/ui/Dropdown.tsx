@@ -30,10 +30,26 @@ export default function Dropdown<T extends string | number>({
       <Pressable
         accessibilityRole="button"
         onPress={() => setOpen(true)}
-        style={[styles.pill, style, align === "left" && { alignSelf: "flex-start" }, align === "right" && { alignSelf: "flex-end" }]}
+        style={[styles.pill, style, { width: "100%", alignSelf: "stretch" }]}
       >
-        {pillLabel ? <Text style={styles.pillHint}>{pillLabel}</Text> : null}
-        <Text style={styles.pillText}>{current?.label}</Text>
+        {pillLabel ? (
+          <Text
+            style={styles.pillHint}
+            numberOfLines={1}
+            ellipsizeMode="tail"
+            allowFontScaling={false}
+          >
+            {pillLabel}
+          </Text>
+        ) : null}
+        <Text
+          style={styles.pillText}
+          numberOfLines={1}
+          ellipsizeMode="tail"
+          allowFontScaling={false}
+        >
+          {current?.label}
+        </Text>
       </Pressable>
 
       <Modal transparent animationType="fade" visible={open} onRequestClose={() => setOpen(false)}>
@@ -64,11 +80,15 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     borderWidth: 1,
     borderColor: "#E5EAF0",
-    paddingHorizontal: 10,
-    paddingVertical: 6,
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    height: 44,
+    justifyContent: "center",
+    alignItems: "flex-start",
   },
   pillHint: {
     fontSize: 10,
+    lineHeight: 12,
     color: COLORS.text,
     opacity: 0.8,
   },
@@ -76,6 +96,8 @@ const styles = StyleSheet.create({
     color: COLORS.ink,
     fontWeight: "800",
     fontSize: 14,
+    lineHeight: 16,
+    flexShrink: 1,
   },
   backdrop: {
     flex: 1,

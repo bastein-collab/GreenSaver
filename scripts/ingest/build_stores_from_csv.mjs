@@ -82,9 +82,10 @@ async function detectEndpoint(website) {
   const headers = { accept: 'application/json, text/plain, */*', 'user-agent': 'Mozilla/5.0 (GreenSaver)' };
   // Quick platform detection from URL
   if (/iheartjane|jane\./i.test(website)) {
-    // Try to derive a slug from URL path
-    const slugMatch = website.match(/dispensaries\/([^\/\?]+)/i) || website.match(/stores\/([^\/\?]+)/i);
-    const slug = slugMatch ? slugMatch[1] : (website.split('/').filter(Boolean).pop() || null);
+    // Try to derive a slug from URL path; handle /stores/<id>/<slug>
+    const m1 = website.match(/dispensaries\/([^\/\?]+)/i);
+    const m2 = website.match(/stores\/(?:[0-9A-Za-z_-]+\/)?([^\/\?]+)/i);
+    const slug = (m1 && m1[1]) || (m2 && m2[1]) || (website.split('/').filter(Boolean).pop() || null);
     return { type: 'jane', slug: slug || null, headers: { ...headers, referer: website, origin }, pageSize: 100, maxPages: 5 };
   }
   if (/dutchie/i.test(website) || /(dtche%5B|dtche%5b|\bdtche\b)/i.test(website)) {
@@ -133,7 +134,7 @@ function normKey(name, city) {
 }
 
 function loadWebMap(p) {
-  if (!p) return { byKey: new Map(), byName: new Map() };
+  if (!p) return { byKey: new Map(), byName: new Map(), entries: [] };
   try {
     const raw = readFile(p);
     // Try JSON first
@@ -141,12 +142,14 @@ function loadWebMap(p) {
       const arr = JSON.parse(raw);
       const byKey = new Map();
       const byName = new Map();
+      const entries = [];
       for (const it of arr) {
         const key = normKey(it.name, it.city);
         if (it.website) byKey.set(key, it.website);
         if (it.name && it.website) byName.set(String(it.name).toLowerCase(), it.website);
+        if (it.name && it.website) entries.push({ nameLower: String(it.name).toLowerCase(), website: it.website });
       }
-      return { byKey, byName };
+      return { byKey, byName, entries };
     } catch {}
     // CSV fallback
     const rows = parseCSV(raw);
@@ -157,6 +160,7 @@ function loadWebMap(p) {
     const websiteIdx = idx(['website','menu','menu url','website url','link']);
     const byKey = new Map();
     const byName = new Map();
+    const entries = [];
     for (let i = 1; i < rows.length; i++) {
       const r = rows[i];
       const nm = nameIdx >= 0 ? r[nameIdx] : '';
@@ -165,11 +169,24 @@ function loadWebMap(p) {
       if (!nm || !ws) continue;
       byKey.set(normKey(nm, ct), ws);
       byName.set(String(nm).toLowerCase(), ws);
+      entries.push({ nameLower: String(nm).toLowerCase(), website: ws });
     }
-    return { byKey, byName };
+    return { byKey, byName, entries };
   } catch {
-    return { byKey: new Map(), byName: new Map() };
+    return { byKey: new Map(), byName: new Map(), entries: [] };
   }
+}
+
+function fuzzyLookupWebsite(name, webmap) {
+  if (!name) return '';
+  const n = String(name).toLowerCase();
+  // simple contains either way
+  let best = '';
+  for (const e of webmap.entries || []) {
+    const m = n.includes(e.nameLower) || e.nameLower.includes(n);
+    if (m) { best = e.website; break; }
+  }
+  return best;
 }
 
 async function build(csvPath) {
@@ -197,7 +214,10 @@ async function build(csvPath) {
     // Enrich website from webmap if missing
     let websiteFilled = website;
     const k = normKey(name, city);
-    const mapped = webmap.byKey.get(k) || webmap.byName.get(String(name || '').toLowerCase()) || '';
+    const mapped = webmap.byKey.get(k)
+      || webmap.byName.get(String(name || '').toLowerCase())
+      || fuzzyLookupWebsite(name, webmap)
+      || '';
     // Prefer webmap mapping if provided (allows overrides of auto-discovered URLs)
     if (mapped) { websiteFilled = mapped; usedWebmap++; }
     const base = { name, city, state, postal_code: postal, website: websiteFilled, lat, lon };

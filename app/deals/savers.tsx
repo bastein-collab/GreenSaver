@@ -272,10 +272,11 @@ export default function SaversScreen() {
       )}
 
       {/* Aligned secondary controls row */}
+      {/* Row 1 of filter pills aligned under the top controls */}
       <View
         style={[
-          styles.subControls,
-          { paddingLeft: btnLeft, paddingRight: Math.max(0, controlsWidth - zipRight) },
+          styles.subRowAligned,
+          { marginLeft: btnLeft, marginRight: Math.max(0, controlsWidth - zipRight) },
         ]}
       >
         <View style={styles.subCell}>
@@ -315,10 +316,11 @@ export default function SaversScreen() {
       </View>
 
       {/* More filters row */}
+      {/* Row 2 of filter pills aligned under the top controls */}
       <View
         style={[
-          styles.subControls,
-          { paddingLeft: btnLeft, paddingRight: Math.max(0, controlsWidth - zipRight) },
+          styles.subRowAligned,
+          { marginLeft: btnLeft, marginRight: Math.max(0, controlsWidth - zipRight) },
         ]}
       >
         <View style={styles.subCell}>
@@ -343,7 +345,7 @@ export default function SaversScreen() {
             value={maxPriceDollars}
             onChange={(v) => setMaxPriceDollars(v)}
             options={[
-              { label: "Any Price", value: -1 },
+              { label: "Any", value: -1 },
               { label: "Under $25", value: 25 },
               { label: "Under $50", value: 50 },
               { label: "Under $75", value: 75 },
@@ -463,8 +465,20 @@ const styles = StyleSheet.create({
     marginBottom: 2,
     gap: 12,
   },
+  // Aligned full-width row that stretches from left edge of "Use my location" to right edge of "Go"
+  subRowAligned: {
+    flexDirection: "row",
+    alignItems: "stretch",
+    justifyContent: "space-between", // first and last touch the edges
+    columnGap: 0, // use space-between gaps instead of fixed gap
+    marginTop: 6,
+    marginBottom: 2,
+  },
   subCell: {
-    flex: 1,
+    flexGrow: 1,
+    flexShrink: 1,
+    flexBasis: 0, // force equal widths across the row
+    minWidth: 0,
   },
   btnPrimary: {
     backgroundColor: COLORS.green,

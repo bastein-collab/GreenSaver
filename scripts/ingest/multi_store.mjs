@@ -238,6 +238,12 @@ async function fetchFromJane(source, store, headers, pageSize = 100, maxPages = 
   const out = [];
   const janeHeaders = { 'content-type': 'application/json', ...headers };
   const graphUrl = process.env.JANE_GRAPHQL_URL || 'https://apigw.iheartjane.com/graphql';
+  // Optional override: try HTML parsing first; if it yields nothing, fall back to GraphQL
+  if (String(process.env.JANE_HTML_ONLY || '').trim() === '1') {
+    const htmlItems = await fetchFromJaneHtml(store, headers);
+    if (Array.isArray(htmlItems) && htmlItems.length) return htmlItems;
+    console.warn('  -> Jane HTML yielded 0 items; attempting GraphQL fallback');
+  }
   let storeId = store.store_id || source.store_id || null;
   // Attempt to resolve storeId via a lightweight store query if missing
   if (!storeId && source.slug) {
@@ -387,10 +393,22 @@ function mapFromApollo(state) {
   for (const v of Object.values(state)) {
     if (!v || typeof v !== 'object') continue;
     const name = v.name || v.productName || null;
-    const pricing = v.price || v.pricing || null;
+    let pricing = v.price || v.pricing || null;
     if (!name || !pricing) continue;
-    const regular = Number(pricing.regular ?? pricing.original ?? pricing.compareAt ?? pricing.originalPrice ?? pricing.msrp ?? 0);
-    const sale = Number(pricing.sale ?? pricing.final ?? pricing.price ?? 0) || regular;
+    // normalize pricing shapes seen across platforms
+    let regular = Number(pricing.regular ?? pricing.original ?? pricing.compareAt ?? pricing.originalPrice ?? pricing.msrp ?? pricing.base ?? 0);
+    let sale = Number(pricing.sale ?? pricing.final ?? pricing.price ?? pricing.value ?? 0);
+    if (!regular && v?.priceRange) {
+      // Some states expose priceRange { min, max }
+      const pr = v.priceRange;
+      regular = Number(pr.max ?? pr.min ?? 0);
+      sale = Number(pr.min ?? pr.max ?? 0);
+    }
+    if (!sale && v?.variants && Array.isArray(v.variants) && v.variants.length) {
+      const vv = v.variants[0];
+      regular = Number(regular || vv?.originalPrice || vv?.compareAt || vv?.msrp || vv?.base || 0);
+      sale = Number(sale || vv?.price || vv?.finalPrice || 0);
+    }
     const pct = regular > 0 ? Math.round(((regular - sale) / regular) * 100) : 0;
     const category = v.category?.name || v.categoryName || (Array.isArray(v.categories) && v.categories[0]?.name) || null;
     const subcategory = v.subcategory?.name || v.subCategory?.name || null;
@@ -423,6 +441,31 @@ function findMoneyInText(s) {
 
 function scrapeProductsFromHtml(html) {
   const $ = loadHtml(html || '');
+  // Try JSON-LD first
+  try {
+    const ld = [];
+    $('script[type="application/ld+json"]').each((_, el) => {
+      try {
+        const txt = $(el).text();
+        const obj = JSON.parse(txt);
+        const arr = Array.isArray(obj) ? obj : [obj];
+        ld.push(...arr);
+      } catch {}
+    });
+    const out = [];
+    for (const o of ld) {
+      if (!o || typeof o !== 'object') continue;
+      if (o['@type'] === 'Product' && (o.name || o.brand || o.offers)) {
+        const name = textClean(o.name || '');
+        const brand = typeof o.brand === 'string' ? o.brand : (o.brand && o.brand.name) || null;
+        const price = Number((o.offers && (o.offers.price || o.offers.lowPrice)) || 0);
+        if (name && Number.isFinite(price) && price > 0) {
+          out.push({ product_name: name, brand_name: brand, price_cents: toCents(price), percent_off: 0, product_type: null, category: null, subcategory: null });
+        }
+      }
+    }
+    if (out.length) return out;
+  } catch {}
   const candidates = [];
   const SELS = [
     '[data-testid*="product"]',
@@ -478,12 +521,48 @@ async function fetchFromJaneHtml(store, headers) {
   try {
     // Try the given page plus common menu routes
     const url = store.website || '';
+    const geo = (() => {
+      const lat = Number(store?.lat);
+      const lon = Number(store?.lon);
+      if (Number.isFinite(lat) && Number.isFinite(lon)) return { latitude: lat, longitude: lon, accuracy: 500 };
+      // NJ centroid fallback
+      return { latitude: 40.0583, longitude: -74.4057, accuracy: 20000 };
+    })();
     const candidates = [url];
     if (/iheartjane\.com\/dispensaries\//i.test(url) && !/\/menu(\/|$)/i.test(url)) {
-      candidates.push(url.replace(/\/$/, '') + '/menu');
+      const base = url.replace(/\/$/, '') + '/menu';
+      candidates.push(base);
+      candidates.push(base + '/all');
+      candidates.push(base + '/specials');
       candidates.push(url.replace(/\/$/, '') + '/menu/flower');
     }
-    const rendered = await renderPage(candidates, { headers: { 'user-agent': 'Mozilla/5.0', accept: 'text/html, */*;q=0.1', referer: url, ...(headers || {}) } });
+    function unique(arr) { return Array.from(new Set(arr.filter(Boolean))); }
+    function findJaneStoreMenuLinks(html) {
+      const links = [];
+      const re = /href=["']([^"']+)["']/gi;
+      let m;
+      while ((m = re.exec(html))) {
+        const href = m[1];
+        if (!/iheartjane\.com\/stores\//i.test(href)) continue;
+        let u = href;
+        try { const abs = new URL(href, url); u = abs.toString(); } catch {}
+        // normalize to include /menu
+        if (!/\/menu(\/|$)/i.test(u)) u = u.replace(/\/$/, '') + '/menu';
+        links.push(u);
+      }
+      // Prefer NJ or matching postal/city if present
+      const city = String(store.city || '').toLowerCase();
+      const zip = String(store.postal_code || '').replace(/[^0-9]/g, '');
+      const scored = links.map((u) => {
+        let score = 0;
+        if (/\bnew-?jersey\b|\bnj\b/i.test(u)) score += 2;
+        if (city && u.toLowerCase().includes(city)) score += 2;
+        if (zip && u.includes(zip)) score += 3;
+        return { u, score };
+      }).sort((a,b)=>b.score-a.score);
+      return unique(scored.map(x=>x.u));
+    }
+    const rendered = await renderPage(candidates, { geo, headers: { 'user-agent': 'Mozilla/5.0', accept: 'text/html, */*;q=0.1', referer: url, ...(headers || {}) } });
     let items = [];
     if (rendered?.ok) {
       const state = rendered.apollo || rendered.apolloCache || (rendered.nextData?.props?.pageProps?.apolloState) || null;
@@ -498,6 +577,21 @@ async function fetchFromJaneHtml(store, headers) {
           if (!items.length) {
             const domItems = scrapeProductsFromHtml(html);
             if (domItems.length) { console.log('  -> Jane DOM parsed items:', domItems.length); return domItems; }
+            // As a last resort, if this is a brand/locator page, follow first few store menu links
+            const storeMenus = findJaneStoreMenuLinks(html).flatMap(u => [u, u + '/all', u + '/specials']).slice(0, 6);
+            if (storeMenus.length) console.log('  -> Jane deep-link candidates:', storeMenus.length, storeMenus[0]);
+            if (storeMenus.length) {
+              const deep = await renderPage(storeMenus, { geo, headers: { 'user-agent': 'Mozilla/5.0', accept: 'text/html, */*;q=0.1', referer: url, ...(headers || {}) } });
+              if (deep?.ok) {
+                const s2 = deep.apollo || deep.apolloCache || (deep.nextData?.props?.pageProps?.apolloState) || extractApolloState(deep.html || '');
+                const it2 = mapFromApollo(s2);
+                if (Array.isArray(it2) && it2.length) { console.log('  -> Jane deep-link parsed items:', it2.length); return it2; }
+                if (deep.html) {
+                  const dom2 = scrapeProductsFromHtml(deep.html);
+                  if (dom2.length) { console.log('  -> Jane deep-link DOM items:', dom2.length); return dom2; }
+                }
+              }
+            }
           }
         }
       }
@@ -512,6 +606,20 @@ async function fetchFromJaneHtml(store, headers) {
     if (!items.length) {
       const domItems = scrapeProductsFromHtml(html);
       if (domItems.length) { console.log('  -> Jane DOM parsed items:', domItems.length); return domItems; }
+      const storeMenus = findJaneStoreMenuLinks(html).flatMap(u => [u, u + '/all', u + '/specials']).slice(0, 6);
+      if (storeMenus.length) console.log('  -> Jane deep static candidates:', storeMenus.length, storeMenus[0]);
+      for (const u of storeMenus) {
+        try {
+          const r2 = await fetch(u, { headers: { 'user-agent': 'Mozilla/5.0', accept: 'text/html, */*;q=0.1', referer: store.website, ...(headers || {}) } });
+          if (!r2.ok) continue;
+          const h2 = await r2.text();
+          const s2 = extractApolloState(h2);
+          const it2 = mapFromApollo(s2);
+          if (Array.isArray(it2) && it2.length) { console.log('  -> Jane deep static parsed items:', it2.length); return it2; }
+          const d2 = scrapeProductsFromHtml(h2);
+          if (d2.length) { console.log('  -> Jane deep static DOM items:', d2.length); return d2; }
+        } catch {}
+      }
     }
     if (items.length) console.log('  -> Jane HTML parsed items:', items.length);
     return items;

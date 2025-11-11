@@ -9,7 +9,7 @@ const LOGO_W = 132;
 
 export default function AppHeader() {
   return (
-    <View style={styles.container}>
+    <View style={styles.container} pointerEvents="box-none">
       {/* Logo pinned to top-right, enlarged, tight to tray */}
       <Image
         source={require("../../assets/images/greensaver_logo.png")}
@@ -17,6 +17,7 @@ export default function AppHeader() {
         resizeMode="contain"
         accessible
         accessibilityLabel="GreenSaver"
+        pointerEvents="none"
       />
       {/* Single-line title below logo, left aligned */}
       <Text

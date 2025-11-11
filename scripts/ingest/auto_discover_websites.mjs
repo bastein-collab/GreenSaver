@@ -107,6 +107,62 @@ async function pageLooksLike(url, platform) {
   } catch { return false; }
 }
 
+function extractJaneStoreMenus(html, baseUrl, city, zip) {
+  const out = [];
+  const re = /href=["']([^"']+)["']/gi;
+  let m;
+  while ((m = re.exec(html))) {
+    let href = m[1];
+    if (!/iheartjane\.com\/stores\//i.test(href)) continue;
+    try { href = new URL(href, baseUrl).toString(); } catch {}
+    if (!/\/menu(\/|$)/i.test(href)) href = href.replace(/\/$/, '') + '/menu';
+    out.push(href);
+  }
+  // score candidates for NJ
+  const cityLower = String(city || '').toLowerCase();
+  const zipDigits = String(zip || '').replace(/[^0-9]/g, '');
+  const scored = out.map((u) => {
+    let score = 0;
+    if (/\bnew-?jersey\b|\bnj\b/i.test(u)) score += 2;
+    if (cityLower && u.toLowerCase().includes(cityLower)) score += 2;
+    if (zipDigits && u.includes(zipDigits)) score += 3;
+    return { u, score };
+  }).sort((a,b)=>b.score-a.score);
+  return Array.from(new Set(scored.map(x=>x.u)));
+}
+
+async function searchJaneStore(name, city) {
+  try {
+    const graphUrl = process.env.JANE_GRAPHQL_URL || 'https://apigw.iheartjane.com/graphql';
+    const q = {
+      query: `query SearchStores($query:String!){
+        search(query:$query){
+          stores{ id name slug city state }
+        }
+      }`,
+      variables: { query: `${name} ${city} NJ` }
+    };
+    const r = await fetch(graphUrl, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(q) });
+    if (!r.ok) return '';
+    const j = await r.json();
+    const stores = j?.data?.search?.stores || [];
+    if (!stores.length) return '';
+    // prefer exact-ish name match and NJ
+    const n = String(name || '').toLowerCase();
+    const c = String(city || '').toLowerCase();
+    const sorted = stores.map(s => {
+      let score = 0;
+      if ((s.state||'').toLowerCase() === 'nj') score += 2;
+      if (s.name && s.name.toLowerCase().includes(n)) score += 2;
+      if (s.city && s.city.toLowerCase().includes(c)) score += 2;
+      return { s, score };
+    }).sort((a,b)=>b.score-a.score);
+    const top = sorted[0]?.s;
+    if (!top?.id || !top?.slug) return '';
+    return `https://www.iheartjane.com/stores/${top.id}/${top.slug}/menu`;
+  } catch { return ''; }
+}
+
 async function discoverFor(store) {
   const name = store.name || '';
   const city = store.city || '';
@@ -114,6 +170,9 @@ async function discoverFor(store) {
   const s1 = slugify(simplifyName(name));
   const c1 = slugify(city);
   const candidates = [];
+  // Try Jane GraphQL search first for precise store menu
+  const byGraph = await searchJaneStore(name, city);
+  if (byGraph) return byGraph;
   // Jane patterns
   for (const domain of ['https://www.iheartjane.com/dispensaries','https://www.iheartjane.com/stores']) {
     candidates.push(`${domain}/${s1}`);
@@ -127,7 +186,18 @@ async function discoverFor(store) {
     if (c1) candidates.push(`${domain}/${s1}-${c1}-nj`);
   }
   for (const u of candidates) {
-    if (u.includes('iheartjane') && await pageLooksLike(u, 'jane')) return u;
+    if (u.includes('iheartjane') && await pageLooksLike(u, 'jane')) {
+      // If this is a dispensaries landing, dig out store menu links and prefer one
+      try {
+        const r = await fetch(u, { method: 'GET', headers: { 'user-agent': 'Mozilla/5.0', accept: 'text/html, */*;q=0.1' } });
+        if (r.ok) {
+          const html = await r.text();
+          const menus = extractJaneStoreMenus(html, u, city, zip);
+          if (menus.length) return menus[0];
+        }
+      } catch {}
+      return u;
+    }
     if (u.includes('dutchie') && await pageLooksLike(u, 'dutchie')) return u;
   }
   return '';
