@@ -130,7 +130,13 @@ try { map = loadMap(webmapPath); } catch {}
 let updated = 0;
 for (const s of stores) {
   const url = fuzzyLookup(s.name, s.city, map);
-  if (url) { s.website = url; updated++; }
+  if (!url) continue;
+  const cur = String(s.website || '');
+  const isPlaceholder = /iheartjane\.com\/dispensaries\//i.test(cur) || cur.trim() === '';
+  if (isPlaceholder) {
+    s.website = url;
+    updated++;
+  }
 }
 const outText = JSON.stringify(Array.isArray(cfg?.stores) ? { stores } : stores, null, 2);
 if (inplace) {
@@ -140,4 +146,3 @@ if (inplace) {
   console.error(`Applied website map. Updated ${updated} stores.`);
   process.stdout.write(outText);
 }
-

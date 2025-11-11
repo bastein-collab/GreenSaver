@@ -107,6 +107,90 @@ async function pageLooksLike(url, platform) {
   } catch { return false; }
 }
 
+// Lightweight liveness check for retailer pages (200 OK + HTML)
+async function pageLooksAlive(url) {
+  try {
+    const r = await fetch(url, { method: 'GET', redirect: 'follow', headers: { 'user-agent': 'Mozilla/5.0', accept: 'text/html, */*;q=0.1' } });
+    if (!r.ok) return false;
+    const html = await r.text();
+    return /<html|<!DOCTYPE/i.test(html);
+  } catch { return false; }
+}
+
+function citySlugify(city) {
+  return slugify(city).replace(/^nj-/, '');
+}
+
+function brandCandidates(name, city) {
+  const out = [];
+  const c1 = citySlugify(city || '');
+  // Zen Leaf
+  if (/\bzen\s*leaf\b/i.test(name)) {
+    if (c1) {
+      out.push(`https://zenleafdispensaries.com/locations/${c1}/menu/menu/discounts?promo=products`);
+      out.push(`https://zenleafdispensaries.com/locations/${c1}/menu/recreational/menu/discounts?promo=deals`);
+    }
+  }
+  // Apothecarium
+  if (/apothecarium/i.test(name)) {
+    if (c1) {
+      out.push(`https://shop.apothecarium.com/${c1}/recreational/menu?filters=%7B%22quickFilter%22%3A%5B2%5D%7D`);
+      out.push(`https://shop.apothecarium.com/${c1}/recreational/menu`);
+    }
+  }
+  // The Botanist
+  if (/\bbotanist\b/i.test(name)) {
+    if (c1) {
+      out.push(`https://shopbotanist.com/locations/${c1}-dispensary/shop-adult-use/menu/specials`);
+      out.push(`https://shopbotanist.com/locations/${c1}-dispensary/shop-adult-use/menu`);
+    }
+  }
+  // The Cannabist
+  if (/\bcannabist\b/i.test(name)) {
+    if (c1) {
+      out.push(`https://www.gocannabist.com/stores/new-jersey/${c1}/shop/recreational/menu/discounts?promo=products`);
+      out.push(`https://www.gocannabist.com/stores/new-jersey/${c1}/shop/recreational/menu`);
+    }
+  }
+  // The Social Leaf
+  if (/social\s*leaf/i.test(name)) {
+    if (c1) {
+      out.push(`https://shop.thesocialleaf.com/${c1}/menu/discounts?promo=products`);
+      out.push(`https://shop.thesocialleaf.com/${c1}/menu`);
+    }
+  }
+  // Valley Wellness
+  if (/valley\s*wellness/i.test(name)) {
+    if (c1) {
+      out.push(`https://shop.valleywellnessnj.com/${c1}/menu/discounts`);
+    }
+  }
+  // Cookies
+  if (/cookies/i.test(name)) {
+    if (c1) {
+      out.push(`https://${c1}.cookies.co/specials`);
+      out.push(`https://${c1}.cookies.co/`);
+    }
+  }
+  // High Profile
+  if (/high\s*profile/i.test(name)) {
+    if (c1) {
+      out.push(`https://dutchie.com/dispensary/nj-${c1}-hp/specials`);
+    }
+  }
+  // Ascend
+  if (/\bascend\b/i.test(name)) {
+    if (c1) {
+      out.push(`https://letsascend.com/stores/${c1}-new-jersey/specials`);
+    }
+  }
+  // Frosted Nug
+  if (/frosted\s*nug/i.test(name)) {
+    if (c1) out.push(`https://frostednug.com/menu/${c1}/offers`);
+  }
+  return out;
+}
+
 function extractJaneStoreMenus(html, baseUrl, city, zip) {
   const out = [];
   const re = /href=["']([^"']+)["']/gi;
@@ -170,6 +254,8 @@ async function discoverFor(store) {
   const s1 = slugify(simplifyName(name));
   const c1 = slugify(city);
   const candidates = [];
+  // Brand-specific candidates
+  for (const u of brandCandidates(name, city)) candidates.push(u);
   // Try Jane GraphQL search first for precise store menu
   const byGraph = await searchJaneStore(name, city);
   if (byGraph) return byGraph;
@@ -182,8 +268,10 @@ async function discoverFor(store) {
   // Dutchie patterns
   for (const domain of ['https://dutchie.com/dispensary','https://www.dutchie.com/dispensary']) {
     candidates.push(`${domain}/${s1}`);
+    candidates.push(`${domain}/${s1}/specials`);
     if (c1) candidates.push(`${domain}/${s1}-${c1}`);
     if (c1) candidates.push(`${domain}/${s1}-${c1}-nj`);
+    if (c1) candidates.push(`${domain}/${s1}-${c1}/specials`);
   }
   for (const u of candidates) {
     if (u.includes('iheartjane') && await pageLooksLike(u, 'jane')) {
@@ -199,6 +287,7 @@ async function discoverFor(store) {
       return u;
     }
     if (u.includes('dutchie') && await pageLooksLike(u, 'dutchie')) return u;
+    if (!/iheartjane|dutchie/.test(u) && await pageLooksAlive(u)) return u;
   }
   return '';
 }
