@@ -1,0 +1,186 @@
+name: Ingest NJ Stores
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/15 * * * *' # every 15 minutes (chunked)
+
+# Ensure only one run is active at a time
+concurrency:
+  group: ingest-nj-stores
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    permissions:
+      contents: read
+    env:
+      NODE_ENV: production
+      FORCE_COLOR: 1
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Find package.json (root or deals-finder or search)
+        id: find_pkg
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          PKG_PATH=""
+          if [ -f "./package.json" ]; then
+            PKG_PATH="."
+          elif [ -f "./deals-finder/package.json" ]; then
+            PKG_PATH="deals-finder"
+          else
+            FOUND="$(find . -maxdepth 6 -type f -name package.json -not -path "*/node_modules/*" -print -quit || true)"
+            if [ -n "${FOUND:-}" ]; then
+              PKG_PATH="${FOUND%/package.json}"
+              PKG_PATH="${PKG_PATH#./}"
+            fi
+          fi
+          if [ -z "${PKG_PATH:-}" ]; then
+            echo "No package.json found in repo — cannot run ingest."
+            echo "pkg_found=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "Found package.json at: $PKG_PATH"
+          echo "pkg_path=$PKG_PATH" >> "$GITHUB_OUTPUT"
+          echo "pkg_found=true" >> "$GITHUB_OUTPUT"
+
+      - name: Show repo layout (debug)
+        if: steps.find_pkg.outputs.pkg_found == 'true'
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          pwd
+          ls -la
+          echo "package.json files:"
+          git ls-files | grep -E '(^|/)package.json$' || true
+          echo "Ingest inputs:"
+          find . -maxdepth 4 -type f -name 'stores.nj.*' 2>/dev/null || true
+
+      - name: Setup Node
+        if: steps.find_pkg.outputs.pkg_found == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: ${{ steps.find_pkg.outputs.pkg_path }}/package-lock.json
+
+      - name: Install deps
+        if: steps.find_pkg.outputs.pkg_found == 'true'
+        working-directory: ${{ steps.find_pkg.outputs.pkg_path }}
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          node --version
+          npm --version
+          if [ -f package-lock.json ]; then
+            npm ci --ignore-scripts
+          else
+            echo "No package-lock.json found; falling back to npm install."
+            npm install --no-audit --no-fund --ignore-scripts
+          fi
+
+      - name: Install Playwright (Chromium)
+        if: steps.find_pkg.outputs.pkg_found == 'true'
+        working-directory: ${{ steps.find_pkg.outputs.pkg_path }}
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          npx playwright --version || true
+          npx playwright install --with-deps chromium
+
+      - name: Prepare stores.nj.json (CSV → JSON or committed JSON)
+        if: steps.find_pkg.outputs.pkg_found == 'true'
+        working-directory: ${{ steps.find_pkg.outputs.pkg_path }}
+        env:
+          STORES_JSON_URL: ${{ vars.STORES_JSON_URL }}
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          mkdir -p scripts/ingest
+          URL="${STORES_JSON_URL:-}"
+          if [ -n "$URL" ]; then
+            echo "Fetching stores JSON from $URL"
+            curl -fsSL --retry 5 --retry-all-errors --max-time 60 "$URL" -o scripts/ingest/stores.nj.json
+          elif [ -f scripts/ingest/stores.nj.csv ]; then
+            echo "Building JSON from CSV"
+            node -r dotenv/config scripts/ingest/build_stores_from_csv.mjs scripts/ingest/stores.nj.csv > scripts/ingest/stores.nj.json
+          elif [ -f scripts/ingest/stores.nj.json ]; then
+            echo "Found committed scripts/ingest/stores.nj.json"
+          else
+            echo "Missing input. Provide one of: scripts/ingest/stores.nj.csv (recommended) OR scripts/ingest/stores.nj.json OR set STORES_JSON_URL." >&2
+            exit 1
+          fi
+          # Validate JSON is well-formed
+          node -e 'const fs=require("fs"); JSON.parse(fs.readFileSync("scripts/ingest/stores.nj.json","utf8"));'
+
+      - name: Resolve store IDs
+        if: steps.find_pkg.outputs.pkg_found == 'true'
+        working-directory: ${{ steps.find_pkg.outputs.pkg_path }}
+        env:
+          DEALS_STORES_ENDPOINT: ${{ vars.DEALS_STORES_ENDPOINT }}
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          node -r dotenv/config scripts/ingest/resolve_store_ids_batch.mjs scripts/ingest/stores.nj.json > scripts/ingest/stores.nj.resolved.json
+          # Validate JSON is well-formed
+          node -e 'const fs=require("fs"); JSON.parse(fs.readFileSync("scripts/ingest/stores.nj.resolved.json","utf8"));'
+
+      - name: Ingest chunk (rolling)
+        if: steps.find_pkg.outputs.pkg_found == 'true'
+        working-directory: ${{ steps.find_pkg.outputs.pkg_path }}
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
+          DEALS_HEADERS_JSON: ${{ secrets.DEALS_HEADERS_JSON }}
+          CHUNK_SIZE: ${{ vars.CHUNK_SIZE }}
+          TOTAL_STORES: ${{ vars.TOTAL_STORES }}
+          INGEST_REPORT: ingest_report.json
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          # Warn if key secrets are missing
+          for k in SUPABASE_URL SUPABASE_SERVICE_ROLE DEALS_HEADERS_JSON; do
+            if [ -z "${!k:-}" ]; then
+              echo "Warning: $k is not set." >&2
+            fi
+          done
+
+          # Ensure report file exists for artifact upload
+          : > "${INGEST_REPORT}"
+
+          # Validate and coerce inputs
+          CHUNK="${CHUNK_SIZE:-25}"
+          TOTAL="${TOTAL_STORES:-275}"
+          if ! [[ "$CHUNK" =~ ^[0-9]+$ ]] || [ "$CHUNK" -le 0 ]; then
+            echo "Invalid CHUNK_SIZE ($CHUNK), defaulting to 25." >&2
+            CHUNK=25
+          fi
+          if ! [[ "$TOTAL" =~ ^[0-9]+$ ]] || [ "$TOTAL" -lt 1 ]; then
+            echo "Invalid TOTAL_STORES ($TOTAL), defaulting to 275." >&2
+            TOTAL=275
+          fi
+          CYCLES=$(( (TOTAL + CHUNK - 1) / CHUNK ))
+          if [ "$CYCLES" -lt 1 ]; then CYCLES=1; fi
+
+          NOW=$(/bin/date -u +%s)
+          IDX=$(( ( ( NOW / 60 ) / 15 ) % CYCLES ))
+          OFFSET=$(( IDX * CHUNK ))
+          echo "Processing chunk index=$IDX offset=$OFFSET size=$CHUNK of total=$TOTAL"
+
+          node -r dotenv/config scripts/ingest/multi_store.mjs scripts/ingest/stores.nj.resolved.json --limit "$CHUNK" --offset "$OFFSET" --concurrency 1
+
+      - name: Upload ingest report
+        if: always() && steps.find_pkg.outputs.pkg_found == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ingest-report-${{ github.run_id }}
+          path: ${{ steps.find_pkg.outputs.pkg_path }}/ingest_report.json
+          if-no-files-found: ignore
+          retention-days: 7
+
