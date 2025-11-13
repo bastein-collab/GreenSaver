@@ -1,19 +1,19 @@
-"name","city","zip","website"
-"Med Leaf","","08215","https://menus.dispenseapp.com/9e34aad030c6f68f/menu"
-"Midnight Greens","","08012","https://menu.midnightgreensnj.com/deals"
-"MindLift Dispensary","","07060","https://mindliftdispensary.com/menu/menu/specials"
-"Scarlet Reserve Room","","","https://www.iheartjane.com/stores/6198/scarlet-reserve-room/menu/specials"
-"The Botanist Egg Harbor","","","https://www.iheartjane.com/stores/2095/nj-the-botanist-egg-harbor-township-medical/menu/specials"
-"The Botanist Collingswood","","","https://www.iheartjane.com/stores/6232/nj-the-botanist-collingswood-medical/menu/specials"
-"MindLift Dispensary","","","https://www.iheartjane.com/stores/6453/mindlift-dispensary-rec/menu/specials"
-"The Botanist Williamstown","","","https://www.iheartjane.com/stores/4417/nj-the-botanist-williamstown-adult-use/menu/specials"
-"The Botanist Williamstown Medical","","","https://www.iheartjane.com/stores/3014/nj-the-botanist-williamstown-medical/menu/specials"
-"The Botanist Egg Harbor Township Adult Use","","","https://www.iheartjane.com/stores/4413/nj-the-botanist-egg-harbor-township-adult-use/menu/specials"
-"Elevated by TheCannaBossLady","","","https://www.iheartjane.com/stores/6623/elevated-by-the-cannaboss-lady/menu/all"
-"Sweetspot Recreational Dispensary Maplewood","","","https://www.iheartjane.com/stores/6246/sweetspot-recreational-dispensary-maplewood/menu/specials"
-"Dogwood Green Rec","","","https://www.iheartjane.com/stores/6297/dogwood-green-rec/menu/specials"
-"RISE Dispensaries Bloomfield Adult Use","","","https://www.iheartjane.com/stores/4439/rise-dispensaries-bloomfield-adult-use/menu/specials"
-"RISE Dispensaries Bloomfield Medical","","","https://www.iheartjane.com/stores/3422/rise-dispensaries-bloomfield-medical/menu/specials"
-"Daylite Cannabis","","","https://www.daylitecannabis.com/menu/offers"
-"Dispensary of Somerset","","","https://thedispensariesofnj.com/somerset/?dtche%5Bpath%5D=specials"
-"Dogwood Green","","","https://www.dogwoodgreen.com/shop/menu/specials/"
+name,city,zip,website
+Med Leaf,,8215,https://menus.dispenseapp.com/9e34aad030c6f68f/menu
+Midnight Greens,,8012,https://menu.midnightgreensnj.com/deals
+MindLift Dispensary,,7060,https://mindliftdispensary.com/menu/menu/specials
+Scarlet Reserve Room,,,
+The Botanist Egg Harbor,,,
+The Botanist Collingswood,,,
+MindLift Dispensary,,,
+The Botanist Williamstown,,,
+The Botanist Williamstown Medical,,,
+The Botanist Egg Harbor Township Adult Use,,,
+Elevated by TheCannaBossLady,,,
+Sweetspot Recreational Dispensary Maplewood,,,
+Dogwood Green Rec,,,
+RISE Dispensaries Bloomfield Adult Use,,,
+RISE Dispensaries Bloomfield Medical,,,
+Daylite Cannabis,,,https://www.daylitecannabis.com/menu/offers
+Dispensary of Somerset,,,https://thedispensariesofnj.com/somerset/?dtche%5Bpath%5D=specials
+Dogwood Green,,,https://www.dogwoodgreen.com/shop/menu/specials/
